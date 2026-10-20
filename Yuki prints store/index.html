@@ -1,0 +1,2149 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Yuki Prints | Custom Printables & Event Packs</title>
+  
+  <!-- Primary Meta Tags -->
+  <meta name="title" content="Yuki Prints | Custom Printables & Event Packs">
+  <meta name="description" content="Shop adorable custom activity books, birthday kits, planners, and individual laminated sheets across all 58 Wilayas of Algeria. Cash on delivery!">
+  <link rel="icon" type="image/png" href="images/logo.png">
+
+  <!-- Google Fonts: Plus Jakarta Sans & Fredoka -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Fredoka:wght@400;500;600;700&family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+
+  <!-- Tailwind CSS via CDN -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            lilac: {
+              50: '#FAF7FD',
+              100: '#F3EBF9',
+              200: '#E7D7F5',
+              300: '#D5BBEC',
+              400: '#BD9EE0',
+              500: '#9B7EC6', // Mockup primary accent
+              600: '#8967B8',
+              700: '#7550A5',
+              800: '#5E3E87',
+              900: '#482E6A',
+              accent: '#9B7EC6',
+              soft: '#A590CB',
+              bgLight: '#F1E8FB'
+            },
+            mintPill: {
+              bg: '#EAF8F2',
+              text: '#227A5B',
+              border: '#D0EFE2'
+            },
+            peachPill: {
+              bg: '#FDF3EB',
+              text: '#B45722',
+              border: '#F8DFCD'
+            },
+            skyPill: {
+              bg: '#ECF6FD',
+              text: '#1B6A9C',
+              border: '#CEE8FB'
+            },
+            pinkPill: {
+              bg: '#FDF0F5',
+              text: '#A62659',
+              border: '#F9D8E6'
+            },
+            lilacPill: {
+              bg: '#F5EFFC',
+              text: '#7550A5',
+              border: '#E8D7F7'
+            }
+          },
+          fontFamily: {
+            sans: ['"Plus Jakarta Sans"', 'sans-serif'],
+            display: ['"Fredoka"', 'sans-serif']
+          },
+          boxShadow: {
+            'soft': '0 8px 30px rgba(155, 126, 198, 0.08)',
+            'card': '0 4px 18px rgba(155, 126, 198, 0.06)',
+            'floating': '0 12px 35px rgba(155, 126, 198, 0.2)',
+            'pill': '0 2px 8px rgba(155, 126, 198, 0.12)'
+          }
+        }
+      }
+    }
+  </script>
+
+  <style>
+    /* Custom Scrollbar */
+    ::-webkit-scrollbar {
+      width: 7px;
+    }
+    ::-webkit-scrollbar-track {
+      background: #faf6fd;
+    }
+    ::-webkit-scrollbar-thumb {
+      background: #d5bbec;
+      border-radius: 9999px;
+    }
+    ::-webkit-scrollbar-thumb:hover {
+      background: #bd9ee0;
+    }
+
+    /* Subtle background grid pattern */
+    .bg-dots {
+      background-image: radial-gradient(#d5bbec 0.75px, transparent 0.75px);
+      background-size: 26px 26px;
+    }
+
+    /* Spiral binding visual simulation for the custom notebook */
+    .spiral-spine {
+      background-image: repeating-linear-gradient(
+        to bottom,
+        #cbd5e1,
+        #cbd5e1 5px,
+        transparent 5px,
+        transparent 16px
+      );
+    }
+
+    /* Modal Animation */
+    .modal-enter {
+      animation: modalFadeIn 0.25s cubic-bezier(0.16, 1, 0.3, 1) forwards;
+    }
+    @keyframes modalFadeIn {
+      from { opacity: 0; transform: scale(0.96) translateY(10px); }
+      to { opacity: 1; transform: scale(1) translateY(0); }
+    }
+  </style>
+</head>
+<body class="bg-[#FAF8FD] text-gray-800 font-sans antialiased min-h-screen flex flex-col selection:bg-purple-200 selection:text-purple-900">
+
+  <!-- ========================================== -->
+  <!-- 1. TOP HEADER & NAVIGATION -->
+  <!-- ========================================== -->
+  <header class="sticky top-0 z-40 bg-white/95 backdrop-blur-md border-b border-purple-100 transition-shadow duration-200 shadow-sm">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="flex items-center justify-between h-20">
+        
+        <!-- Left: Logo & Store Name matching Mockup 2 -->
+        <a href="#home" class="flex items-center gap-3 group focus:outline-none">
+          <div class="relative w-11 h-11 sm:w-12 sm:h-12 rounded-full ring-2 ring-purple-200 overflow-hidden shadow-sm bg-purple-50 flex items-center justify-center transition-transform group-hover:scale-105">
+            <img id="store-logo" src="images/logo.png" alt="Yuki Prints Logo" class="w-full h-full object-cover">
+          </div>
+          <div class="flex items-center gap-1.5">
+            <span class="text-2xl sm:text-3xl font-display font-bold text-lilac-accent tracking-tight transition-colors group-hover:text-purple-800">
+              Yuki Prints
+            </span>
+            <span class="text-amber-400 text-sm sm:text-base animate-pulse">✦</span>
+          </div>
+        </a>
+
+        <!-- Center: Desktop Nav Links -->
+        <nav class="hidden md:flex items-center space-x-1 lg:space-x-2">
+          <a href="#home" class="px-4 py-2 rounded-full text-sm font-semibold text-gray-700 hover:text-lilac-accent hover:bg-purple-50 transition">Home</a>
+          <a href="#catalog" onclick="filterCategory('Activity Sheets')" class="px-4 py-2 rounded-full text-sm font-semibold text-gray-700 hover:text-lilac-accent hover:bg-purple-50 transition">Activity Sheets</a>
+          <a href="#catalog" onclick="filterCategory('Birthday Packs')" class="px-4 py-2 rounded-full text-sm font-semibold text-gray-700 hover:text-lilac-accent hover:bg-purple-50 transition">Birthday Packs</a>
+          <a href="#catalog" onclick="filterCategory('Planners')" class="px-4 py-2 rounded-full text-sm font-semibold text-gray-700 hover:text-lilac-accent hover:bg-purple-50 transition">Planners</a>
+          <a href="#catalog" onclick="filterCategory('Flashcards')" class="px-4 py-2 rounded-full text-sm font-semibold text-gray-700 hover:text-lilac-accent hover:bg-purple-50 transition">Flashcards</a>
+          <a href="#catalog" onclick="filterCategory('Party')" class="px-4 py-2 rounded-full text-sm font-semibold text-gray-700 hover:text-lilac-accent hover:bg-purple-50 transition">Party</a>
+        </nav>
+
+        <!-- Right: Actions (Cart + Mobile Toggle) -->
+        <div class="flex items-center gap-3">
+          
+          <!-- Quick Build Book link button on Desktop -->
+          <a href="#custom-builder" class="hidden lg:inline-flex items-center gap-1.5 px-4 py-2 rounded-full text-xs font-bold bg-purple-50 text-lilac-accent border border-purple-200 hover:bg-purple-100 transition shadow-sm">
+            <span>🎨</span>
+            <span>Custom Book Builder</span>
+          </a>
+
+          <!-- Cart Button with live badge counter -->
+          <button id="cart-btn" onclick="openCartDrawer()" aria-label="Open Shopping Cart" class="relative p-2.5 sm:px-4 sm:py-2 rounded-full bg-purple-100/70 hover:bg-purple-200/80 text-lilac-900 flex items-center gap-2 transition duration-200 active:scale-95 shadow-sm">
+            <svg class="w-6 h-6 text-lilac-accent" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M16 11V7a4 4 0 00-8 0v4M5 9h14l1 12H4L5 9z" />
+            </svg>
+            <span class="hidden sm:inline font-bold text-sm text-purple-900">Cart</span>
+            <span id="cart-badge" class="absolute -top-1.5 -right-1.5 bg-lilac-soft text-white text-xs font-bold rounded-full w-5 h-5 flex items-center justify-center shadow-md">0</span>
+          </button>
+
+          <!-- Mobile Hamburger Toggle Menu Button -->
+          <button id="mobile-menu-btn" onclick="toggleMobileMenu()" aria-label="Toggle Navigation Menu" class="md:hidden p-2.5 rounded-xl bg-purple-50 text-lilac-accent hover:bg-purple-100 transition">
+            <svg id="hamburger-icon" class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16" />
+            </svg>
+            <svg id="close-icon" class="w-6 h-6 hidden" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12" />
+            </svg>
+          </button>
+
+        </div>
+
+      </div>
+    </div>
+
+    <!-- Mobile Slide-Down Menu -->
+    <div id="mobile-menu" class="hidden md:hidden bg-white/98 border-b border-purple-100 px-4 pt-3 pb-6 space-y-3 shadow-xl backdrop-blur-md transition-all">
+      <div class="grid grid-cols-2 gap-2">
+        <a href="#home" onclick="toggleMobileMenu()" class="flex items-center gap-2 px-3.5 py-2.5 rounded-xl text-sm font-semibold text-gray-800 bg-purple-50 hover:bg-purple-100">
+          <span>🏠</span> Home
+        </a>
+        <a href="#custom-builder" onclick="toggleMobileMenu()" class="flex items-center gap-2 px-3.5 py-2.5 rounded-xl text-sm font-semibold text-lilac-accent bg-purple-100 hover:bg-purple-200">
+          <span>🎨</span> Build Book
+        </a>
+      </div>
+      
+      <div class="border-t border-purple-100 pt-2 space-y-1">
+        <p class="text-[11px] uppercase tracking-wider font-bold text-purple-400 px-3 py-1">Catalog Categories</p>
+        <button onclick="filterCategory('Activity Sheets'); toggleMobileMenu();" class="w-full text-left flex items-center gap-3 px-3 py-2 rounded-xl text-sm font-semibold text-gray-700 hover:bg-purple-50">
+          <span>✏️</span> Activity Sheets & Packs
+        </button>
+        <button onclick="filterCategory('Birthday Packs'); toggleMobileMenu();" class="w-full text-left flex items-center gap-3 px-3 py-2 rounded-xl text-sm font-semibold text-gray-700 hover:bg-purple-50">
+          <span>🎁</span> Birthday Packs
+        </button>
+        <button onclick="filterCategory('Planners'); toggleMobileMenu();" class="w-full text-left flex items-center gap-3 px-3 py-2 rounded-xl text-sm font-semibold text-gray-700 hover:bg-purple-50">
+          <span>📔</span> Planners
+        </button>
+        <button onclick="filterCategory('Flashcards'); toggleMobileMenu();" class="w-full text-left flex items-center gap-3 px-3 py-2 rounded-xl text-sm font-semibold text-gray-700 hover:bg-purple-50">
+          <span>🗂️</span> Flashcards
+        </button>
+        <button onclick="filterCategory('Party'); toggleMobileMenu();" class="w-full text-left flex items-center gap-3 px-3 py-2 rounded-xl text-sm font-semibold text-gray-700 hover:bg-purple-50">
+          <span>🎉</span> Party Sets
+        </button>
+      </div>
+
+      <div class="pt-3 border-t border-purple-100 flex items-center justify-between text-xs text-gray-600 px-2">
+        <span class="flex items-center gap-1 font-medium">📞 WhatsApp: <strong class="text-purple-800">0794205496</strong></span>
+        <span class="text-lilac-accent font-semibold">58 Wilayas COD</span>
+      </div>
+    </div>
+  </header>
+
+  <main class="flex-grow">
+    
+    <!-- ========================================== -->
+    <!-- 2. HERO BANNER -->
+    <!-- ========================================== -->
+    <section id="home" class="relative overflow-hidden pt-8 pb-14 md:pt-14 md:pb-20 bg-dots">
+      <div class="absolute top-12 left-1/4 w-72 h-72 bg-purple-200/40 rounded-full blur-3xl pointer-events-none"></div>
+      <div class="absolute bottom-8 right-1/4 w-80 h-80 bg-pink-100/50 rounded-full blur-3xl pointer-events-none"></div>
+
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative">
+        <div class="grid grid-cols-1 lg:grid-cols-12 gap-10 items-center">
+          
+          <!-- Hero Left Column -->
+          <div class="lg:col-span-6 space-y-6 text-center lg:text-left">
+            
+            <div class="inline-flex items-center gap-2 px-4 py-1.5 rounded-full bg-purple-100/80 text-purple-800 text-xs sm:text-sm font-semibold border border-purple-200 shadow-sm">
+              <span class="text-amber-500">✨</span>
+              <span>Handcrafted Printables & Custom Events in Algeria</span>
+            </div>
+
+            <h1 class="text-3xl sm:text-5xl lg:text-[3.25rem] font-bold text-gray-900 tracking-tight leading-[1.15]">
+              Custom Printables & <br class="hidden sm:inline">
+              Event Packs for <br class="hidden sm:inline">
+              <span class="text-transparent bg-clip-text bg-gradient-to-r from-purple-800 via-lilac-accent to-purple-600">Big Moments.</span>
+            </h1>
+
+            <p class="text-base sm:text-lg text-gray-600 max-w-xl mx-auto lg:mx-0 font-normal leading-relaxed">
+              Choose individual activity sheets, custom flashcard sets, birthday packs, or custom planners.
+            </p>
+
+            <div class="flex flex-col sm:flex-row items-center justify-center lg:justify-start gap-3 sm:gap-4 pt-2">
+              <a href="#catalog" class="w-full sm:w-auto text-center px-8 py-3.5 rounded-full bg-lilac-accent hover:bg-purple-600 text-white font-bold text-sm sm:text-base shadow-floating transition-all duration-200 transform hover:-translate-y-0.5 active:translate-y-0 focus:outline-none">
+                Explore Catalog
+              </a>
+              <a href="#custom-builder" class="w-full sm:w-auto text-center px-8 py-3.5 rounded-full bg-white hover:bg-purple-50 text-lilac-accent border-2 border-purple-300 font-bold text-sm sm:text-base shadow-sm transition-all duration-200 transform hover:-translate-y-0.5 active:translate-y-0 focus:outline-none">
+                Build Custom Activity Book
+              </a>
+            </div>
+
+            <!-- Value Props Badges -->
+            <div class="pt-4 flex flex-wrap items-center justify-center lg:justify-start gap-4 text-xs font-semibold text-gray-500">
+              <div class="flex items-center gap-1.5">
+                <span class="w-2 h-2 rounded-full bg-emerald-400"></span>
+                <span>All 58 Wilayas Home & Desk Delivery</span>
+              </div>
+              <div class="flex items-center gap-1.5">
+                <span class="w-2 h-2 rounded-full bg-amber-400"></span>
+                <span>100% Cash on Delivery</span>
+              </div>
+            </div>
+
+          </div>
+
+          <!-- Hero Right Column -->
+          <div class="lg:col-span-6 flex justify-center lg:justify-end">
+            <div class="relative w-full max-w-lg lg:max-w-none group">
+              <div class="absolute -inset-2 bg-gradient-to-r from-purple-200/60 via-pink-100/50 to-indigo-100/60 rounded-3xl blur-lg opacity-80 group-hover:opacity-100 transition duration-500"></div>
+              
+              <div class="relative bg-white/90 backdrop-blur-sm p-3 sm:p-4 rounded-3xl border border-purple-100 shadow-soft overflow-hidden">
+                <img src="images/hero-showcase.png" alt="Yuki Prints Collection: Activity Books, Planners, and Birthday Packs" class="w-full h-auto rounded-2xl object-cover transform transition-transform duration-500 group-hover:scale-[1.01]">
+                
+                <div class="absolute bottom-6 left-6 bg-white/95 backdrop-blur-md py-1.5 px-3.5 rounded-full border border-purple-100 shadow-md flex items-center gap-2">
+                  <span class="w-2.5 h-2.5 rounded-full bg-lilac-accent animate-ping"></span>
+                  <span class="text-xs font-bold text-purple-900">Customized with Child's Name</span>
+                </div>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ========================================== -->
+    <!-- 3. CATEGORY FILTER TABS -->
+    <!-- ========================================== -->
+    <section id="catalog" class="pt-6 pb-4 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      
+      <!-- Filter Tabs Bar -->
+      <div class="flex items-center justify-start md:justify-center overflow-x-auto no-scrollbar py-2 gap-2.5 sm:gap-3">
+        
+        <button onclick="filterCategory('all')" data-cat="all" class="cat-pill flex-shrink-0 px-6 py-2.5 rounded-full text-sm font-bold flex items-center gap-2 transition duration-200 shadow-pill border bg-lilac-soft text-white border-lilac-soft ring-2 ring-purple-200 focus:outline-none">
+          <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6a2 2 0 012-2h2a2 2 0 012 2v2a2 2 0 01-2 2H6a2 2 0 01-2-2V6zM14 6a2 2 0 012-2h2a2 2 0 012 2v2a2 2 0 01-2 2h-2a2 2 0 01-2-2V6zM4 16a2 2 0 012-2h2a2 2 0 012 2v2a2 2 0 01-2 2H6a2 2 0 01-2-2v-2zM14 16a2 2 0 012-2h2a2 2 0 012 2v2a2 2 0 01-2 2h-2a2 2 0 01-2-2v-2z" />
+          </svg>
+          <span>All</span>
+        </button>
+
+        <button onclick="filterCategory('Activity Sheets')" data-cat="Activity Sheets" class="cat-pill flex-shrink-0 px-6 py-2.5 rounded-full text-sm font-semibold flex items-center gap-2 transition duration-200 shadow-sm border bg-white text-gray-700 border-gray-100 hover:border-purple-200 hover:bg-purple-50/50 focus:outline-none">
+          <span>✏️</span>
+          <span>Activity Sheets & Packs</span>
+        </button>
+
+        <button onclick="filterCategory('Birthday Packs')" data-cat="Birthday Packs" class="cat-pill flex-shrink-0 px-6 py-2.5 rounded-full text-sm font-semibold flex items-center gap-2 transition duration-200 shadow-sm border bg-white text-gray-700 border-gray-100 hover:border-purple-200 hover:bg-purple-50/50 focus:outline-none">
+          <span>🎁</span>
+          <span>Birthday Packs</span>
+        </button>
+
+        <button onclick="filterCategory('Planners')" data-cat="Planners" class="cat-pill flex-shrink-0 px-6 py-2.5 rounded-full text-sm font-semibold flex items-center gap-2 transition duration-200 shadow-sm border bg-white text-gray-700 border-gray-100 hover:border-purple-200 hover:bg-purple-50/50 focus:outline-none">
+          <span>📔</span>
+          <span>Planners</span>
+        </button>
+
+        <button onclick="filterCategory('Flashcards')" data-cat="Flashcards" class="cat-pill flex-shrink-0 px-6 py-2.5 rounded-full text-sm font-semibold flex items-center gap-2 transition duration-200 shadow-sm border bg-white text-gray-700 border-gray-100 hover:border-purple-200 hover:bg-purple-50/50 focus:outline-none">
+          <span>🗂️</span>
+          <span>Flashcards</span>
+        </button>
+
+        <button onclick="filterCategory('Party')" data-cat="Party" class="cat-pill flex-shrink-0 px-6 py-2.5 rounded-full text-sm font-semibold flex items-center gap-2 transition duration-200 shadow-sm border bg-white text-gray-700 border-gray-100 hover:border-purple-200 hover:bg-purple-50/50 focus:outline-none">
+          <span>🎉</span>
+          <span>Party</span>
+        </button>
+
+      </div>
+
+      <!-- Result Counter & Search Helper -->
+      <div class="flex flex-col sm:flex-row items-center justify-between text-xs text-gray-500 mt-4 px-2 gap-2">
+        <span id="results-count" class="font-medium">Showing all curated products</span>
+        <div class="flex items-center gap-2">
+          <span class="text-lilac-accent font-semibold">⚡ Instant COD Checkout (58 Wilayas)</span>
+          <span class="text-gray-300">•</span>
+          <span>Single Sheets & Full Custom Books</span>
+        </div>
+      </div>
+
+    </section>
+
+    <!-- ========================================== -->
+    <!-- 4. MAIN PRODUCT CATALOG GRID -->
+    <!-- ========================================== -->
+    <section class="py-6 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      
+      <!-- Responsive Product Grid: 4 cols desktop, 2 cols tablet, 1-2 cols mobile -->
+      <div id="product-grid" class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
+        <!-- Products populated dynamically by JavaScript -->
+      </div>
+
+      <!-- Empty state -->
+      <div id="no-products-msg" class="hidden py-16 text-center space-y-4">
+        <div class="w-16 h-16 mx-auto rounded-full bg-purple-50 flex items-center justify-center text-3xl">🌸</div>
+        <h3 class="text-lg font-bold text-gray-800">No products found in this category</h3>
+        <p class="text-sm text-gray-500">Try selecting "All" or building a custom activity book below.</p>
+        <button onclick="filterCategory('all')" class="px-5 py-2 rounded-full bg-lilac-accent text-white text-xs font-bold shadow-sm">View All Products</button>
+      </div>
+
+    </section>
+
+    <!-- ========================================== -->
+    <!-- 5. BUILD YOUR CUSTOM ACTIVITY BOOK SECTION -->
+    <!-- ========================================== -->
+    <section id="custom-builder" class="py-12 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      
+      <div class="bg-[#FAF6FC] border border-purple-200/80 rounded-3xl p-6 sm:p-8 lg:p-10 shadow-soft relative overflow-hidden">
+        
+        <div class="absolute -right-20 -bottom-20 w-80 h-80 bg-purple-200/40 rounded-full blur-3xl pointer-events-none"></div>
+
+        <div class="grid grid-cols-1 lg:grid-cols-12 gap-8 items-start relative">
+          
+          <!-- Column 1: Intro, Personalizer & Cover Design Selector -->
+          <div class="lg:col-span-4 flex flex-col justify-between space-y-5">
+            <div>
+              <div class="inline-flex items-center gap-1.5 px-3 py-1 rounded-full bg-purple-100 text-purple-700 text-xs font-bold mb-2">
+                <span>🪄</span> Custom Book Creator
+              </div>
+              <h2 class="text-2xl sm:text-3xl font-display font-bold text-gray-900 tracking-tight leading-snug">
+                Build Your Custom <br class="hidden sm:inline">Activity Book
+              </h2>
+              <p class="text-xs sm:text-sm text-gray-600 mt-2 leading-relaxed font-normal">
+                Personalize your cover theme, overlay your child's name, and pick favorite activity sheet bundles!
+              </p>
+            </div>
+
+            <!-- Child Name / Book Title Personalizer Input -->
+            <div class="bg-white/95 p-3.5 rounded-2xl border border-purple-100 shadow-sm space-y-1.5">
+              <label for="child-name-input" class="block text-[11px] font-bold text-purple-800 uppercase tracking-wider">
+                👶 Child's Name / Book Title (Live on Cover):
+              </label>
+              <div class="relative">
+                <input type="text" id="child-name-input" placeholder="e.g. Lina, Adam, Maya" value="Lina" maxlength="22"
+                       class="w-full px-3.5 py-2 text-sm font-semibold rounded-xl bg-purple-50/50 border border-purple-200 focus:outline-none focus:ring-2 focus:ring-purple-400 focus:bg-white text-gray-800 transition">
+                <span class="absolute right-3 top-2 text-xs text-purple-400">✏️</span>
+              </div>
+              <p class="text-[10px] text-gray-400">Updates live dynamically on the spiral notebook cover!</p>
+            </div>
+
+            <!-- Cover Design Thumbnail Selector (Requirement 3) -->
+            <div class="bg-white/95 p-3.5 rounded-2xl border border-purple-100 shadow-sm space-y-2">
+              <span class="block text-[11px] font-bold text-purple-800 uppercase tracking-wider">
+                🎨 Choose Book Cover Design:
+              </span>
+              <div id="cover-designs-grid" class="grid grid-cols-5 gap-2">
+                <!-- Cover design thumbnails rendered by JavaScript -->
+              </div>
+              <p id="selected-cover-label" class="text-[11px] font-bold text-purple-700 text-center pt-1">Cover: Pastel Teddy Bear</p>
+            </div>
+
+            <!-- Cute Bunny Illustration -->
+            <div class="flex items-center justify-center lg:justify-start pt-1">
+              <img src="images/bunny-builder.png" alt="Cute bunny reading book" class="w-40 sm:w-44 h-auto object-contain drop-shadow-sm transform hover:scale-105 transition duration-300">
+            </div>
+
+          </div>
+
+          <!-- Column 2: Sheet Types Checkboxes -->
+          <div class="lg:col-span-4 space-y-3">
+            <div class="flex items-center justify-between pb-1">
+              <span class="text-xs font-bold uppercase tracking-wider text-purple-800">Select Sheet Modules:</span>
+              <span class="text-xs text-purple-600 font-medium">Included inside book</span>
+            </div>
+
+            <!-- Sheet 1: Math -->
+            <label class="sheet-checkbox-card flex items-center justify-between p-3 rounded-2xl bg-white border-2 border-purple-200 hover:border-lilac-accent cursor-pointer shadow-sm transition-all duration-200 group">
+              <div class="flex items-center gap-3">
+                <div class="w-14 h-12 rounded-xl bg-purple-50/50 flex items-center justify-center p-1 overflow-hidden border border-purple-100 flex-shrink-0">
+                  <img src="images/sheet-math.png" alt="Math practice sheets" class="w-full h-full object-contain">
+                </div>
+                <div>
+                  <h4 class="font-bold text-sm text-gray-900 group-hover:text-purple-800 transition">Math Practice</h4>
+                  <p class="text-xs text-gray-500 leading-tight">Fun math with addition, subtraction and number bonds.</p>
+                </div>
+              </div>
+              <input type="checkbox" name="custom-sheet" value="Math Practice" checked onchange="updateCustomBookBuilder()" 
+                     class="w-5 h-5 rounded-md text-lilac-accent focus:ring-purple-400 border-gray-300 transition cursor-pointer accent-[#9B7EC6]">
+            </label>
+
+            <!-- Sheet 2: Tracing -->
+            <label class="sheet-checkbox-card flex items-center justify-between p-3 rounded-2xl bg-white border-2 border-purple-200 hover:border-lilac-accent cursor-pointer shadow-sm transition-all duration-200 group">
+              <div class="flex items-center gap-3">
+                <div class="w-14 h-12 rounded-xl bg-purple-50/50 flex items-center justify-center p-1 overflow-hidden border border-purple-100 flex-shrink-0">
+                  <img src="images/sheet-tracing.png" alt="Tracing basics sheets" class="w-full h-full object-contain">
+                </div>
+                <div>
+                  <h4 class="font-bold text-sm text-gray-900 group-hover:text-purple-800 transition">Letter & Word Tracing</h4>
+                  <p class="text-xs text-gray-500 leading-tight">Guided lines and letters to build strong penmanship.</p>
+                </div>
+              </div>
+              <input type="checkbox" name="custom-sheet" value="Letter & Word Tracing" checked onchange="updateCustomBookBuilder()" 
+                     class="w-5 h-5 rounded-md text-lilac-accent focus:ring-purple-400 border-gray-300 transition cursor-pointer accent-[#9B7EC6]">
+            </label>
+
+            <!-- Sheet 3: Puzzles -->
+            <label class="sheet-checkbox-card flex items-center justify-between p-3 rounded-2xl bg-white border-2 border-purple-200 hover:border-lilac-accent cursor-pointer shadow-sm transition-all duration-200 group">
+              <div class="flex items-center gap-3">
+                <div class="w-14 h-12 rounded-xl bg-purple-50/50 flex items-center justify-center p-1 overflow-hidden border border-purple-100 flex-shrink-0">
+                  <img src="images/sheet-puzzles.png" alt="Puzzles and mazes sheets" class="w-full h-full object-contain">
+                </div>
+                <div>
+                  <h4 class="font-bold text-sm text-gray-900 group-hover:text-purple-800 transition">Mazes & Brain Puzzles</h4>
+                  <p class="text-xs text-gray-500 leading-tight">Engaging mazes, find-the-pair, and logic puzzles.</p>
+                </div>
+              </div>
+              <input type="checkbox" name="custom-sheet" value="Mazes & Brain Puzzles" checked onchange="updateCustomBookBuilder()" 
+                     class="w-5 h-5 rounded-md text-lilac-accent focus:ring-purple-400 border-gray-300 transition cursor-pointer accent-[#9B7EC6]">
+            </label>
+
+            <!-- Sheet 4: Number Tracing 1-20 -->
+            <label class="sheet-checkbox-card flex items-center justify-between p-3 rounded-2xl bg-white border-2 border-purple-100 hover:border-lilac-accent cursor-pointer shadow-sm transition-all duration-200 group">
+              <div class="flex items-center gap-3">
+                <div class="w-14 h-12 rounded-xl bg-purple-50/50 flex items-center justify-center p-1 overflow-hidden border border-purple-100 flex-shrink-0">
+                  <img src="images/number-tracing-sheets.png" alt="Number tracing sheets" class="w-full h-full object-contain">
+                </div>
+                <div>
+                  <h4 class="font-bold text-sm text-gray-900 group-hover:text-purple-800 transition">Number Tracing 1 to 20</h4>
+                  <p class="text-xs text-gray-500 leading-tight">Dot-to-dot counting and numbers recognition.</p>
+                </div>
+              </div>
+              <input type="checkbox" name="custom-sheet" value="Number Tracing 1 to 20" onchange="updateCustomBookBuilder()" 
+                     class="w-5 h-5 rounded-md text-lilac-accent focus:ring-purple-400 border-gray-300 transition cursor-pointer accent-[#9B7EC6]">
+            </label>
+
+            <!-- Sheet 5: Coloring Art -->
+            <label class="sheet-checkbox-card flex items-center justify-between p-3 rounded-2xl bg-white border-2 border-purple-100 hover:border-lilac-accent cursor-pointer shadow-sm transition-all duration-200 group">
+              <div class="flex items-center gap-3">
+                <div class="w-14 h-12 rounded-xl bg-pink-50/60 flex items-center justify-center p-1 overflow-hidden border border-pink-100 flex-shrink-0 text-xl">
+                  🎨
+                </div>
+                <div>
+                  <h4 class="font-bold text-sm text-gray-900 group-hover:text-purple-800 transition">Creative Coloring Art</h4>
+                  <p class="text-xs text-gray-500 leading-tight">Whimsical characters and cheerful coloring scenes.</p>
+                </div>
+              </div>
+              <input type="checkbox" name="custom-sheet" value="Creative Coloring Art" onchange="updateCustomBookBuilder()" 
+                     class="w-5 h-5 rounded-md text-lilac-accent focus:ring-purple-400 border-gray-300 transition cursor-pointer accent-[#9B7EC6]">
+            </label>
+
+          </div>
+
+          <!-- Column 3: Live Preview Box & Actions (Requirement 3) -->
+          <div class="lg:col-span-4 flex flex-col items-center justify-center text-center space-y-3.5">
+            
+            <!-- Live Sheet Counter Badge -->
+            <div class="flex items-center justify-center">
+              <div id="live-sheet-badge" class="px-5 py-2 rounded-full bg-lilac-soft text-white text-xs sm:text-sm font-bold shadow-md flex items-center gap-2">
+                <svg class="w-4 h-4 text-purple-200" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12h6m-6 4h6m2 5H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z" />
+                </svg>
+                <span id="sheet-count-text">3 sheets selected</span>
+              </div>
+            </div>
+
+            <!-- Realistic Spiral Book Cover Preview with Live Theme & Custom Name -->
+            <div class="relative w-48 sm:w-52 h-64 sm:h-70 rounded-2xl overflow-hidden shadow-floating bg-white border border-purple-200 group cursor-pointer" onclick="openBookPreviewModal()">
+              <!-- Left Spiral Wire spine -->
+              <div class="absolute left-0 top-0 bottom-0 w-4 spiral-spine z-10 border-r border-slate-300 shadow-inner"></div>
+
+              <!-- Cover image base (swapped dynamically) -->
+              <img id="builder-cover-image" src="images/custom-book-cover.png" alt="Custom Book Cover" class="w-full h-full object-cover transition duration-300">
+
+              <!-- Dynamic Name Overlay on the cover -->
+              <div class="absolute bottom-3 left-6 right-3 text-center z-10 pointer-events-none">
+                <span id="cover-child-name" class="inline-block px-3 py-1 rounded-full bg-lilac-accent/95 text-white font-display font-bold text-xs shadow-md tracking-wide">
+                  Lina's Edition
+                </span>
+              </div>
+
+              <!-- Hover overlay -->
+              <div class="absolute inset-0 bg-purple-900/25 opacity-0 group-hover:opacity-100 transition-opacity flex items-center justify-center z-20">
+                <span class="px-3.5 py-1.5 rounded-full bg-white text-purple-900 text-xs font-bold shadow-md flex items-center gap-1.5">
+                  🔍 Preview Inside
+                </span>
+              </div>
+            </div>
+
+            <!-- Calculated Custom Price -->
+            <div class="flex items-baseline gap-2">
+              <span class="text-xs text-gray-500 font-medium">Custom Book Total:</span>
+              <span id="custom-book-price" class="text-xl font-extrabold text-purple-900">1,600 DA</span>
+            </div>
+
+            <!-- Action Buttons -->
+            <div class="w-full space-y-2 max-w-xs">
+              <button onclick="openBookPreviewModal()" class="w-full py-2.5 px-4 rounded-xl bg-lilac-soft hover:bg-lilac-accent text-white font-semibold text-sm shadow-sm transition flex items-center justify-center gap-2">
+                <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 12a3 3 0 11-6 0 3 3 0 016 0z" />
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M2.458 12C3.732 7.943 7.523 5 12 5c4.478 0 8.268 2.943 9.542 7-1.274 4.057-5.064 7-9.542 7-4.477 0-8.268-2.943-9.542-7z" />
+                </svg>
+                <span>Preview My Book</span>
+              </button>
+
+              <button onclick="addCustomBookToCart()" class="w-full py-2.5 px-4 rounded-xl bg-white hover:bg-purple-50 text-purple-800 border-2 border-purple-200 font-semibold text-sm transition flex items-center justify-center gap-2">
+                <svg class="w-4 h-4 text-lilac-accent" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 4v16m8-8H4" />
+                </svg>
+                <span>Add Custom Book to Cart</span>
+              </button>
+            </div>
+
+          </div>
+
+        </div>
+
+      </div>
+
+    </section>
+
+  </main>
+
+  <!-- ========================================== -->
+  <!-- 6. FOOTER -->
+  <!-- ========================================== -->
+  <footer class="bg-lilac-bgLight border-t border-purple-200 mt-16 pt-14 pb-8 text-gray-700 relative overflow-hidden">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+      
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-12 gap-8 pb-12 border-b border-purple-200/80">
+        
+        <!-- Footer Column 1: Brand Info -->
+        <div class="lg:col-span-4 space-y-4">
+          <div class="flex items-center gap-3">
+            <div class="w-10 h-10 rounded-full overflow-hidden ring-2 ring-purple-300 bg-white flex items-center justify-center shadow-sm">
+              <img src="images/logo.png" alt="Yuki Prints" class="w-full h-full object-cover">
+            </div>
+            <span class="text-2xl font-display font-bold text-purple-900 tracking-tight">Yuki Prints</span>
+          </div>
+          <p class="text-sm text-gray-600 leading-relaxed max-w-sm">
+            Custom printables and event for life's most special moments just for you! 💜
+          </p>
+          <div class="pt-2 text-xs text-purple-800 font-medium space-y-1">
+            <p class="flex items-center gap-2">
+              <span>📍</span> <span>Delivery across all 58 Wilayas of Algeria</span>
+            </p>
+            <p class="flex items-center gap-2">
+              <span>💵</span> <span>Payment in Cash on Delivery / Pickup</span>
+            </p>
+          </div>
+        </div>
+
+        <!-- Footer Column 2: Shop Links -->
+        <div class="lg:col-span-2 space-y-3">
+          <h4 class="text-xs font-bold uppercase tracking-wider text-purple-900">Shop</h4>
+          <ul class="space-y-2 text-sm font-medium">
+            <li><button onclick="filterCategory('Activity Sheets')" class="text-gray-600 hover:text-purple-800 transition">Activity Sheets</button></li>
+            <li><button onclick="filterCategory('Birthday Packs')" class="text-gray-600 hover:text-purple-800 transition">Birthday Packs</button></li>
+            <li><button onclick="filterCategory('Planners')" class="text-gray-600 hover:text-purple-800 transition">Planners</button></li>
+            <li><button onclick="filterCategory('Flashcards')" class="text-gray-600 hover:text-purple-800 transition">Flashcards</button></li>
+            <li><button onclick="filterCategory('Party')" class="text-gray-600 hover:text-purple-800 transition">Party</button></li>
+          </ul>
+        </div>
+
+        <!-- Footer Column 3: Helpful Links -->
+        <div class="lg:col-span-3 space-y-3">
+          <h4 class="text-xs font-bold uppercase tracking-wider text-purple-900">Helpful Links</h4>
+          <ul class="space-y-2 text-sm font-medium">
+            <li><button onclick="openHelpModal('how-it-works')" class="text-gray-600 hover:text-purple-800 transition">How It Works</button></li>
+            <li><button onclick="openHelpModal('delivery-pricing')" class="text-gray-600 hover:text-purple-800 transition">58 Wilayas Delivery</button></li>
+            <li><button onclick="openHelpModal('faqs')" class="text-gray-600 hover:text-purple-800 transition">FAQs</button></li>
+            <li><button onclick="openHelpModal('about-us')" class="text-gray-600 hover:text-purple-800 transition">About Us</button></li>
+            <li><button onclick="openHelpModal('contact-us')" class="text-gray-600 hover:text-purple-800 transition">Contact Us</button></li>
+          </ul>
+        </div>
+
+        <!-- Footer Column 4: Connect With Us & Socials -->
+        <div class="lg:col-span-3 space-y-3">
+          <h4 class="text-xs font-bold uppercase tracking-wider text-purple-900">Connect With Us</h4>
+          
+          <div class="flex items-start justify-between gap-3">
+            <div class="flex flex-col gap-2.5">
+              <a href="https://www.instagram.com/yuki.prints.fy/" target="_blank" rel="noopener noreferrer" class="flex items-center gap-2.5 text-sm text-gray-700 hover:text-purple-800 transition">
+                <svg class="w-4 h-4 text-purple-600 flex-shrink-0" fill="currentColor" viewBox="0 0 24 24">
+                  <path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"/>
+                </svg>
+                <span>Instagram</span>
+              </a>
+
+              <a href="https://www.tiktok.com/@yuki.prints?lang=en-GB" target="_blank" rel="noopener noreferrer" class="flex items-center gap-2.5 text-sm text-gray-700 hover:text-purple-800 transition">
+                <svg class="w-4 h-4 text-purple-600 flex-shrink-0" fill="currentColor" viewBox="0 0 24 24">
+                  <path d="M12.525.02c1.31-.02 2.61-.01 3.91-.02.08 1.53.63 3.09 1.75 4.17 1.12 1.11 2.7 1.62 4.24 1.79v4.03c-1.44-.05-2.89-.35-4.2-.97-.57-.26-1.1-.59-1.62-.93-.01 2.92.01 5.84-.02 8.75-.08 1.4-.54 2.79-1.35 3.94-1.31 1.92-3.58 3.17-5.91 3.21-1.43.08-2.86-.31-4.08-1.03-2.02-1.19-3.44-3.37-3.65-5.71-.02-.5-.03-1-.01-1.49.18-1.9 1.12-3.72 2.58-4.96 1.66-1.44 3.98-2.13 6.15-1.72.02 1.48-.04 2.96-.04 4.44-.99-.32-2.15-.23-3.02.37-.63.41-1.11 1.04-1.36 1.75-.21.51-.24 1.07-.14 1.61.24 1.64 1.82 3.02 3.5 2.87 1.12-.01 2.19-.66 2.77-1.61.19-.33.4-.67.41-1.06.1-1.79.06-3.57.07-5.36.01-4.03-.01-8.05.02-12.07z"/>
+                </svg>
+                <span>TikTok</span>
+              </a>
+
+              <a href="https://www.facebook.com/profile.php?id=61591608031913" target="_blank" rel="noopener noreferrer" class="flex items-center gap-2.5 text-sm text-gray-700 hover:text-purple-800 transition">
+                <svg class="w-4 h-4 text-purple-600 flex-shrink-0" fill="currentColor" viewBox="0 0 24 24">
+                  <path d="M9 8H6v4h3v12h5V12h3.642L18 8h-4V6.333C14 5.374 14.5 5 15.6 5H18V0h-3.808C10.597 0 9 1.583 9 4.615V8z"/>
+                </svg>
+                <span>Facebook</span>
+              </a>
+
+              <a href="https://wa.me/213794205496" target="_blank" rel="noopener noreferrer" class="flex items-center gap-2.5 text-sm text-gray-900 font-bold hover:text-purple-800 transition">
+                <svg class="w-4 h-4 text-emerald-600 flex-shrink-0" fill="currentColor" viewBox="0 0 24 24">
+                  <path d="M12.031 6.172c-3.181 0-5.767 2.586-5.768 5.766-.001 1.298.38 2.27 1.019 3.287l-.582 2.128 2.182-.573c.978.58 1.911.928 3.145.929 3.178 0 5.767-2.587 5.768-5.766.001-3.187-2.575-5.77-5.764-5.771zm3.392 8.244c-.144.405-.837.774-1.17.824-.299.045-.677.063-1.092-.069-.252-.08-.575-.187-.988-.365-1.739-.751-2.874-2.502-2.961-2.617-.087-.116-.708-.94-.708-1.793s.448-1.273.607-1.446c.159-.173.346-.217.462-.217l.332.007c.106.005.249-.04.39.298.144.347.491 1.2.534 1.287.043.087.072.188.014.304-.058.116-.087.188-.173.289l-.26.304c-.087.086-.177.18-.076.354.101.174.449.741.964 1.201.662.591 1.221.774 1.394.86s.275.072.376-.044c.101-.116.433-.506.549-.68.116-.173.231-.145.39-.086s1.011.477 1.184.564.289.13.332.202c.045.072.045.419-.1.824zm-3.423-14.416c-6.627 0-12 5.373-12 12 0 2.155.57 4.178 1.564 5.927l-1.636 5.973 6.13-1.609c1.674.912 3.585 1.436 5.617 1.436 6.627 0 12-5.373 12-12 0-6.627-5.373-12-12-12z"/>
+                </svg>
+                <span>0794205496</span>
+              </a>
+            </div>
+
+            <!-- Decorative Balloons Image -->
+            <div class="flex-shrink-0">
+              <img src="images/footer-balloons.png" alt="Party balloons and gift" class="w-24 sm:w-28 h-auto object-contain drop-shadow-sm opacity-95">
+            </div>
+          </div>
+        </div>
+
+      </div>
+
+      <div class="pt-8 text-center text-xs text-gray-500 font-medium">
+        <p>© 2024 Yuki Prints. All rights reserved. • Handcrafted with love in Algeria</p>
+      </div>
+
+    </div>
+  </footer>
+
+  <!-- ========================================== -->
+  <!-- 7. SLIDING SHOPPING CART DRAWER -->
+  <!-- ========================================== -->
+  <div id="cart-drawer-backdrop" onclick="closeCartDrawer()" class="fixed inset-0 bg-slate-900/40 backdrop-blur-sm z-50 opacity-0 pointer-events-none transition-opacity duration-300"></div>
+
+  <aside id="cart-drawer" class="fixed top-0 right-0 h-full w-full sm:w-[440px] bg-white z-50 shadow-2xl transform translate-x-full transition-transform duration-300 ease-in-out flex flex-col">
+    
+    <!-- Cart Header -->
+    <div class="p-5 border-b border-purple-100 flex items-center justify-between bg-purple-50/50">
+      <div class="flex items-center gap-2">
+        <h3 class="font-display font-bold text-xl text-purple-900">Your Shopping Cart</h3>
+        <span id="drawer-item-count" class="px-2 py-0.5 rounded-full bg-purple-200 text-purple-800 text-xs font-bold">0 items</span>
+      </div>
+      <button onclick="closeCartDrawer()" aria-label="Close cart drawer" class="p-2 rounded-full text-gray-400 hover:text-gray-700 hover:bg-purple-100 transition">
+        <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12" />
+        </svg>
+      </button>
+    </div>
+
+    <!-- Cart Items Scrollable List -->
+    <div id="cart-items-container" class="flex-grow overflow-y-auto p-5 space-y-4">
+      <!-- Injected by JavaScript -->
+    </div>
+
+    <!-- Cart Footer with Pricing & Checkout CTA -->
+    <div id="cart-footer" class="p-5 border-t border-purple-100 bg-purple-50/30 space-y-3">
+      
+      <!-- Subtotal Breakdown -->
+      <div class="space-y-1.5 text-sm">
+        <div class="flex justify-between text-gray-600">
+          <span>Items Subtotal</span>
+          <span id="cart-subtotal" class="font-bold text-gray-800">0 DA</span>
+        </div>
+        <div class="flex justify-between text-xs text-purple-700">
+          <span>Estimated Wilaya Delivery</span>
+          <span id="cart-shipping-notice" class="font-semibold">Calculated at checkout</span>
+        </div>
+        <div class="border-t border-purple-100 pt-2 flex justify-between text-base font-extrabold text-purple-950">
+          <span>Subtotal</span>
+          <span id="cart-total" class="text-xl text-purple-800">0 DA</span>
+        </div>
+      </div>
+
+      <!-- Proceed to Cash Checkout Button -->
+      <button onclick="openCheckoutModal()" class="w-full py-3.5 px-4 rounded-xl bg-lilac-accent hover:bg-purple-600 text-white font-bold text-base shadow-floating transition duration-200 flex items-center justify-center gap-2 active:scale-98">
+        <span>💵</span>
+        <span>Proceed to Cash Checkout</span>
+      </button>
+
+      <p class="text-center text-[11px] text-gray-500 font-medium">
+        🔒 100% Cash on Delivery across all 58 Wilayas of Algeria.
+      </p>
+
+    </div>
+
+  </aside>
+
+  <!-- ========================================== -->
+  <!-- 8. ADVANCED CASH-ONLY CHECKOUT MODAL (58 WILAYAS PRICING) -->
+  <!-- ========================================== -->
+  <div id="checkout-modal" class="fixed inset-0 z-50 hidden flex items-center justify-center p-4 sm:p-6 overflow-y-auto">
+    <div class="fixed inset-0 bg-slate-900/50 backdrop-blur-sm" onclick="closeCheckoutModal()"></div>
+    
+    <div class="relative bg-white w-full max-w-xl rounded-3xl shadow-2xl border border-purple-100 overflow-hidden my-6 z-10 modal-enter">
+      
+      <!-- Modal Header -->
+      <div class="px-6 py-4 border-b border-purple-100 bg-purple-50/70 flex items-center justify-between">
+        <div class="flex items-center gap-2">
+          <span class="text-2xl">🛍️</span>
+          <div>
+            <h3 class="font-display font-bold text-xl text-purple-900">Cash-Only Checkout</h3>
+            <p class="text-xs text-purple-600 font-medium">Algeria 58 Wilayas Delivery Pricing System</p>
+          </div>
+        </div>
+        <button onclick="closeCheckoutModal()" class="p-2 rounded-full text-gray-400 hover:text-gray-700 hover:bg-purple-100 transition">
+          <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12" />
+          </svg>
+        </button>
+      </div>
+
+      <!-- Modal Body Form -->
+      <form id="checkout-form" onsubmit="handleCheckoutSubmit(event)" class="p-6 space-y-4 max-h-[78vh] overflow-y-auto">
+        
+        <!-- Cash notice alert matching prompt -->
+        <div class="p-3.5 rounded-2xl bg-amber-50 border border-amber-200 flex items-start gap-3 text-xs text-amber-900">
+          <span class="text-lg">💵</span>
+          <div>
+            <strong class="font-bold">Payment is collected in Cash on Delivery / Pickup:</strong>
+            <p class="text-amber-800 mt-0.5">No credit card required. You pay cash to the courier upon parcel arrival!</p>
+          </div>
+        </div>
+
+        <!-- Customer Name -->
+        <div>
+          <label for="cust-name" class="block text-xs font-bold text-gray-700 uppercase tracking-wider mb-1">
+            Customer Full Name <span class="text-red-500">*</span>
+          </label>
+          <input type="text" id="cust-name" required placeholder="e.g. Lina Benali" 
+                 class="w-full px-4 py-2.5 rounded-xl border border-gray-200 text-sm focus:outline-none focus:ring-2 focus:ring-purple-400 focus:border-purple-300">
+        </div>
+
+        <!-- Phone Number -->
+        <div>
+          <label for="cust-phone" class="block text-xs font-bold text-gray-700 uppercase tracking-wider mb-1">
+            Phone Number (WhatsApp Active) <span class="text-red-500">*</span>
+          </label>
+          <input type="tel" id="cust-phone" required placeholder="e.g. 0794205496 / 05xx xx xx xx" 
+                 class="w-full px-4 py-2.5 rounded-xl border border-gray-200 text-sm focus:outline-none focus:ring-2 focus:ring-purple-400 focus:border-purple-300">
+          <p class="text-[11px] text-gray-400 mt-1">We will send tracking updates and order confirmation here.</p>
+        </div>
+
+        <!-- Wilaya Selector (Complete 58 Wilayas of Algeria) -->
+        <div>
+          <div class="flex items-center justify-between mb-1">
+            <label for="cust-wilaya-select" class="block text-xs font-bold text-gray-700 uppercase tracking-wider">
+              Wilaya (All 58 Wilayas of Algeria) <span class="text-red-500">*</span>
+            </label>
+            <span id="wilaya-region-badge" class="text-[10px] font-bold px-2 py-0.5 rounded-full bg-purple-100 text-purple-700">Zone Centre</span>
+          </div>
+          <select id="cust-wilaya-select" onchange="onWilayaChange()" required class="w-full px-3.5 py-2.5 rounded-xl border border-gray-200 text-sm bg-white font-medium focus:outline-none focus:ring-2 focus:ring-purple-400 focus:border-purple-300">
+            <!-- 58 Wilayas populated dynamically by JavaScript -->
+          </select>
+        </div>
+
+        <!-- Delivery Type Selector: "At Home (Domicile)" vs "Stop Desk (Bureau)" with Live Pricing -->
+        <div>
+          <label class="block text-xs font-bold text-gray-700 uppercase tracking-wider mb-1.5">
+            Delivery Option & Pricing <span class="text-red-500">*</span>
+          </label>
+          <div class="grid grid-cols-1 sm:grid-cols-2 gap-2.5">
+            <label id="delivery-option-home-card" class="p-3 rounded-xl border-2 border-purple-400 bg-purple-50/50 flex items-center justify-between cursor-pointer transition">
+              <div class="flex items-center gap-2">
+                <input type="radio" name="delivery-mode" value="home" checked onchange="onDeliveryTypeChange()" class="text-purple-600 focus:ring-purple-400 accent-[#9B7EC6]">
+                <div class="flex flex-col">
+                  <span class="text-xs font-bold text-gray-900">🚚 At Home (Domicile)</span>
+                  <span class="text-[10px] text-gray-500">Delivered to your door</span>
+                </div>
+              </div>
+              <span id="home-fee-badge" class="text-xs font-extrabold text-purple-800 bg-purple-100 px-2 py-0.5 rounded-lg">400 DA</span>
+            </label>
+
+            <label id="delivery-option-desk-card" class="p-3 rounded-xl border border-gray-200 hover:border-purple-200 bg-white flex items-center justify-between cursor-pointer transition">
+              <div class="flex items-center gap-2">
+                <input type="radio" name="delivery-mode" value="desk" onchange="onDeliveryTypeChange()" class="text-purple-600 focus:ring-purple-400 accent-[#9B7EC6]">
+                <div class="flex flex-col">
+                  <span class="text-xs font-bold text-gray-900">🏢 Stop Desk (Bureau)</span>
+                  <span class="text-[10px] text-gray-500">Pickup at wilaya agency</span>
+                </div>
+              </div>
+              <span id="desk-fee-badge" class="text-xs font-extrabold text-emerald-800 bg-emerald-50 px-2 py-0.5 rounded-lg">250 DA</span>
+            </label>
+          </div>
+        </div>
+
+        <!-- Commune / City & Delivery Address -->
+        <div class="grid grid-cols-1 sm:grid-cols-2 gap-3">
+          <div>
+            <label for="cust-commune" class="block text-xs font-bold text-gray-700 uppercase tracking-wider mb-1">
+              Commune / City <span class="text-red-500">*</span>
+            </label>
+            <input type="text" id="cust-commune" required placeholder="e.g. Bab Ezzouar, Hydra" 
+                   class="w-full px-4 py-2.5 rounded-xl border border-gray-200 text-sm focus:outline-none focus:ring-2 focus:ring-purple-400 focus:border-purple-300">
+          </div>
+          <div>
+            <label for="cust-address" class="block text-xs font-bold text-gray-700 uppercase tracking-wider mb-1">
+              Address / Stop-Desk Branch <span class="text-red-500">*</span>
+            </label>
+            <input type="text" id="cust-address" required placeholder="Street address or nearest landmark" 
+                   class="w-full px-4 py-2.5 rounded-xl border border-gray-200 text-sm focus:outline-none focus:ring-2 focus:ring-purple-400 focus:border-purple-300">
+          </div>
+        </div>
+
+        <!-- Special Customization Notes -->
+        <div>
+          <label for="cust-notes" class="block text-xs font-bold text-gray-700 uppercase tracking-wider mb-1">
+            Special Customization / Gift Notes (Optional)
+          </label>
+          <textarea id="cust-notes" rows="2" placeholder="e.g. Child's age, custom birthday pack theme, gift message..." 
+                    class="w-full px-4 py-2 rounded-xl border border-gray-200 text-sm focus:outline-none focus:ring-2 focus:ring-purple-400 focus:border-purple-300"></textarea>
+        </div>
+
+        <!-- Dynamic Order Summary & Wilaya Shipping Fee Breakdown -->
+        <div class="p-4 rounded-2xl bg-purple-50/50 border border-purple-100 space-y-2">
+          <div class="flex items-center justify-between text-xs font-bold text-purple-900 uppercase">
+            <span>Order Breakdown</span>
+            <span id="checkout-summary-items-count">0 items</span>
+          </div>
+
+          <div id="checkout-items-preview" class="text-xs text-gray-600 space-y-1.5 max-h-28 overflow-y-auto pr-1">
+            <!-- Dynamically populated items -->
+          </div>
+
+          <!-- Subtotal, Delivery Fee & Final Total calculation -->
+          <div class="border-t border-purple-100 pt-2 space-y-1 text-xs">
+            <div class="flex justify-between text-gray-600">
+              <span>Items Subtotal:</span>
+              <span id="checkout-subtotal-val" class="font-bold text-gray-800">0 DA</span>
+            </div>
+            <div class="flex justify-between text-purple-800">
+              <span id="checkout-shipping-label">Delivery Fee (Alger - Home):</span>
+              <span id="checkout-shipping-val" class="font-bold text-purple-900">400 DA</span>
+            </div>
+            <div class="border-t border-purple-200 pt-1.5 flex justify-between text-sm sm:text-base font-extrabold text-purple-950">
+              <span>Total Payable (Cash):</span>
+              <span id="checkout-final-total-val" class="text-lg text-lilac-accent">0 DA</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Submit Actions: WhatsApp button + Fallback Copy button -->
+        <div class="pt-2 space-y-2.5">
+          <button type="submit" class="w-full py-3.5 px-4 rounded-xl bg-emerald-600 hover:bg-emerald-700 text-white font-bold text-sm sm:text-base shadow-lg shadow-emerald-600/20 transition flex items-center justify-center gap-2">
+            <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24">
+              <path d="M.057 24l1.687-6.163c-1.041-1.804-1.588-3.849-1.587-5.946.003-6.556 5.338-11.891 11.893-11.891 3.181.001 6.167 1.24 8.413 3.488 2.245 2.248 3.481 5.236 3.48 8.414-.003 6.557-5.338 11.892-11.893 11.892-1.99-.001-3.951-.5-5.688-1.448l-6.305 1.654zm6.597-3.807c1.676.995 3.276 1.591 5.392 1.592 5.448 0 9.886-4.434 9.889-9.885.002-5.462-4.415-9.89-9.881-9.892-5.452 0-9.887 4.434-9.889 9.884-.001 2.225.651 3.891 1.746 5.634l-.999 3.648 3.742-.981z"/>
+            </svg>
+            <span>Confirm Order via WhatsApp</span>
+          </button>
+
+          <button type="button" onclick="copyOrderSummaryToClipboard()" class="w-full py-2.5 px-4 rounded-xl bg-purple-50 hover:bg-purple-100 text-purple-900 border border-purple-200 font-semibold text-xs sm:text-sm transition flex items-center justify-center gap-2">
+            <svg class="w-4 h-4 text-purple-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 16H6a2 2 0 01-2-2V6a2 2 0 012-2h8a2 2 0 012 2v2m-6 12h8a2 2 0 002-2v-8a2 2 0 00-2-2h-8a2 2 0 00-2 2v8a2 2 0 002 2z" />
+            </svg>
+            <span>Copy Order Summary (Fallback)</span>
+          </button>
+        </div>
+
+      </form>
+
+    </div>
+  </div>
+
+  <!-- ========================================== -->
+  <!-- 9. INTERACTIVE "PREVIEW MY BOOK" MODAL -->
+  <!-- ========================================== -->
+  <div id="book-preview-modal" class="fixed inset-0 z-50 hidden flex items-center justify-center p-4 sm:p-6 overflow-y-auto">
+    <div class="fixed inset-0 bg-slate-900/60 backdrop-blur-sm" onclick="closeBookPreviewModal()"></div>
+    
+    <div class="relative bg-white w-full max-w-2xl rounded-3xl shadow-2xl border border-purple-100 overflow-hidden z-10 p-6 sm:p-8 modal-enter">
+      
+      <div class="flex items-center justify-between pb-4 border-b border-purple-100">
+        <div>
+          <h3 class="font-display font-bold text-2xl text-purple-900">Custom Book Live Preview</h3>
+          <p class="text-xs text-purple-600">See your personalized activity book before ordering</p>
+        </div>
+        <button onclick="closeBookPreviewModal()" class="p-2 rounded-full text-gray-400 hover:text-gray-700 hover:bg-purple-100 transition">
+          <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12" />
+          </svg>
+        </button>
+      </div>
+
+      <!-- Book Preview Content -->
+      <div class="py-6 flex flex-col md:flex-row items-center gap-6">
+        
+        <div class="relative w-48 sm:w-52 h-64 sm:h-70 rounded-2xl overflow-hidden shadow-floating bg-white border border-purple-200 flex-shrink-0">
+          <div class="absolute left-0 top-0 bottom-0 w-4 spiral-spine z-10 border-r border-slate-300 shadow-inner"></div>
+          <img id="modal-preview-cover-img" src="images/custom-book-cover.png" alt="Custom book cover" class="w-full h-full object-cover">
+          <div class="absolute bottom-3 left-6 right-3 text-center z-10">
+            <span id="modal-preview-name" class="inline-block px-3 py-1 rounded-full bg-lilac-accent/95 text-white font-display font-bold text-xs shadow-md">
+              Lina's Edition
+            </span>
+          </div>
+        </div>
+
+        <div class="space-y-4 flex-grow">
+          <div>
+            <span id="modal-preview-theme-badge" class="text-xs font-bold text-purple-500 uppercase tracking-wider">Cover: Pastel Teddy Bear</span>
+            <h4 id="modal-preview-title" class="font-bold text-lg text-gray-800">Custom Spiral Activity Book</h4>
+            <p class="text-xs text-gray-500 mt-1">Laminated protective front/back cover + premium smudge-free paper.</p>
+          </div>
+
+          <div class="space-y-2">
+            <span class="text-xs font-bold text-gray-700">Included Content Modules:</span>
+            <ul id="modal-included-sheets" class="space-y-1.5 text-xs text-gray-600">
+              <!-- Dynamically populated -->
+            </ul>
+          </div>
+
+          <div class="pt-2 flex items-center justify-between border-t border-purple-100">
+            <div>
+              <span class="text-xs text-gray-500">Book Total Price:</span>
+              <p id="modal-preview-price" class="text-xl font-extrabold text-purple-900">1,600 DA</p>
+            </div>
+            <button onclick="addCustomBookToCart(); closeBookPreviewModal();" class="px-5 py-2.5 rounded-xl bg-lilac-soft hover:bg-lilac-accent text-white font-bold text-xs shadow-md transition flex items-center gap-1.5">
+              <span>🛒 Add This Book</span>
+            </button>
+          </div>
+        </div>
+
+      </div>
+
+    </div>
+  </div>
+
+  <!-- ========================================== -->
+  <!-- 10. PRODUCT QUICK-VIEW MODAL -->
+  <!-- ========================================== -->
+  <div id="quickview-modal" class="fixed inset-0 z-50 hidden flex items-center justify-center p-4 sm:p-6 overflow-y-auto">
+    <div class="fixed inset-0 bg-slate-900/50 backdrop-blur-sm" onclick="closeQuickViewModal()"></div>
+    
+    <div class="relative bg-white w-full max-w-2xl rounded-3xl shadow-2xl border border-purple-100 overflow-hidden z-10 p-6 modal-enter">
+      <button onclick="closeQuickViewModal()" class="absolute top-4 right-4 p-2 rounded-full text-gray-400 hover:text-gray-700 hover:bg-purple-100 transition z-20">
+        <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12" />
+        </svg>
+      </button>
+
+      <div class="grid grid-cols-1 md:grid-cols-2 gap-6 items-center">
+        <div class="rounded-2xl overflow-hidden bg-purple-50/50 border border-purple-100 p-2 flex items-center justify-center">
+          <img id="qv-img" src="" alt="Product Image" class="w-full h-auto max-h-64 object-contain rounded-xl">
+        </div>
+
+        <div class="space-y-4">
+          <div>
+            <span id="qv-category" class="inline-block px-2.5 py-1 rounded-full text-xs font-bold bg-purple-100 text-purple-800 mb-2">Category</span>
+            <h3 id="qv-title" class="font-display font-bold text-2xl text-gray-900">Product Title</h3>
+            <p id="qv-price" class="text-2xl font-extrabold text-purple-900 mt-1">0 DA</p>
+          </div>
+
+          <p id="qv-desc" class="text-sm text-gray-600 leading-relaxed">
+            High quality physical printable carefully laminated with rounded safety corners for kids.
+          </p>
+
+          <div class="text-xs text-gray-500 space-y-1 bg-purple-50/60 p-3 rounded-xl border border-purple-100">
+            <p class="flex items-center gap-1.5"><span>🚚</span> All 58 Wilayas Cash on delivery</p>
+            <p class="flex items-center gap-1.5"><span>✨</span> Printed on premium durable stock</p>
+          </div>
+
+          <div id="qv-action-container" class="flex items-center gap-2 pt-2">
+            <!-- Dynamic Buttons injected based on whether it is a single sheet or pack -->
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- ========================================== -->
+  <!-- 11. HELPFUL INFO / FAQ MODAL -->
+  <!-- ========================================== -->
+  <div id="help-modal" class="fixed inset-0 z-50 hidden flex items-center justify-center p-4 sm:p-6 overflow-y-auto">
+    <div class="fixed inset-0 bg-slate-900/50 backdrop-blur-sm" onclick="closeHelpModal()"></div>
+    
+    <div class="relative bg-white w-full max-w-xl rounded-3xl shadow-2xl border border-purple-100 overflow-hidden z-10 p-6 sm:p-8 modal-enter">
+      <div class="flex items-center justify-between pb-3 border-b border-purple-100">
+        <h3 id="help-modal-title" class="font-display font-bold text-xl text-purple-900">Help & Info</h3>
+        <button onclick="closeHelpModal()" class="p-2 rounded-full text-gray-400 hover:text-gray-700 hover:bg-purple-100 transition">
+          <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12" />
+          </svg>
+        </button>
+      </div>
+
+      <div id="help-modal-content" class="py-4 text-sm text-gray-600 space-y-3 leading-relaxed">
+        <!-- Content injected dynamically -->
+      </div>
+    </div>
+  </div>
+
+  <!-- ========================================== -->
+  <!-- 12. FLOATING WHATSAPP BUTTON -->
+  <!-- ========================================== -->
+  <a href="https://wa.me/213794205496" target="_blank" rel="noopener noreferrer" 
+     aria-label="Chat on WhatsApp" 
+     class="fixed bottom-6 right-6 z-40 bg-emerald-500 hover:bg-emerald-600 text-white p-3.5 sm:px-4 sm:py-3 rounded-full shadow-floating flex items-center gap-2 transition transform hover:scale-105 active:scale-95 group">
+    <svg class="w-6 h-6 fill-current" viewBox="0 0 24 24">
+      <path d="M.057 24l1.687-6.163c-1.041-1.804-1.588-3.849-1.587-5.946.003-6.556 5.338-11.891 11.893-11.891 3.181.001 6.167 1.24 8.413 3.488 2.245 2.248 3.481 5.236 3.48 8.414-.003 6.557-5.338 11.892-11.893 11.892-1.99-.001-3.951-.5-5.688-1.448l-6.305 1.654zm6.597-3.807c1.676.995 3.276 1.591 5.392 1.592 5.448 0 9.886-4.434 9.889-9.885.002-5.462-4.415-9.89-9.881-9.892-5.452 0-9.887 4.434-9.889 9.884-.001 2.225.651 3.891 1.746 5.634l-.999 3.648 3.742-.981z"/>
+    </svg>
+    <span class="hidden sm:inline font-bold text-xs tracking-wide">WhatsApp Support</span>
+  </a>
+
+  <!-- ========================================== -->
+  <!-- 13. TOAST NOTIFICATIONS CONTAINER -->
+  <!-- ========================================== -->
+  <div id="toast-container" class="fixed bottom-6 left-6 z-50 flex flex-col gap-2 pointer-events-none"></div>
+
+  <!-- ========================================== -->
+  <!-- 14. APPLICATION JAVASCRIPT -->
+  <!-- ========================================== -->
+  <script>
+    // --- Store Constants & Configuration ---
+    const STORE_WHATSAPP_NUMBER = "213794205496";
+    const CURRENCY = "DA";
+
+    // ========================================================
+    // 1. COMPREHENSIVE WILAYA DELIVERY PRICING DATA (ALL 58 WILAYAS)
+    // ========================================================
+    const WILAYA_DELIVERY_DATA = [
+      { code: 1, name: "Adrar", home: 1200, desk: 900, region: "Sud" },
+      { code: 2, name: "Chlef", home: 650, desk: 350, region: "Centre-Ouest" },
+      { code: 3, name: "Laghouat", home: 800, desk: 450, region: "Hauts Plateaux" },
+      { code: 4, name: "Oum El Bouaghi", home: 700, desk: 400, region: "Est" },
+      { code: 5, name: "Batna", home: 700, desk: 400, region: "Est" },
+      { code: 6, name: "Béjaïa", home: 700, desk: 400, region: "Kabylie / Est" },
+      { code: 7, name: "Biskra", home: 800, desk: 450, region: "Sud-Est" },
+      { code: 8, name: "Béchar", home: 900, desk: 550, region: "Sud-Ouest" },
+      { code: 9, name: "Blida", home: 500, desk: 300, region: "Grand Alger" },
+      { code: 10, name: "Bouira", home: 600, desk: 350, region: "Centre" },
+      { code: 11, name: "Tamanrasset", home: 1200, desk: 1000, region: "Grand Sud" },
+      { code: 12, name: "Tébessa", home: 750, desk: 400, region: "Est" },
+      { code: 13, name: "Tlemcen", home: 700, desk: 400, region: "Ouest" },
+      { code: 14, name: "Tiaret", home: 700, desk: 400, region: "Hauts Plateaux" },
+      { code: 15, name: "Tizi Ouzou", home: 600, desk: 350, region: "Kabylie / Centre" },
+      { code: 16, name: "Alger", home: 400, desk: 250, region: "Capitale" },
+      { code: 17, name: "Djelfa", home: 800, desk: 450, region: "Hauts Plateaux" },
+      { code: 18, name: "Jijel", home: 700, desk: 400, region: "Est" },
+      { code: 19, name: "Sétif", home: 700, desk: 400, region: "Est" },
+      { code: 20, name: "Saïda", home: 750, desk: 450, region: "Ouest" },
+      { code: 21, name: "Skikda", home: 700, desk: 400, region: "Est" },
+      { code: 22, name: "Sidi Bel Abbès", home: 700, desk: 400, region: "Ouest" },
+      { code: 23, name: "Annaba", home: 700, desk: 400, region: "Est" },
+      { code: 24, name: "Guelma", home: 700, desk: 400, region: "Est" },
+      { code: 25, name: "Constantine", home: 700, desk: 400, region: "Est" },
+      { code: 26, name: "Médéa", home: 600, desk: 350, region: "Centre" },
+      { code: 27, name: "Mostaganem", home: 700, desk: 400, region: "Ouest" },
+      { code: 28, name: "M'Sila", home: 750, desk: 450, region: "Hauts Plateaux" },
+      { code: 29, name: "Mascara", home: 700, desk: 400, region: "Ouest" },
+      { code: 30, name: "Ouargla", home: 900, desk: 550, region: "Sud" },
+      { code: 31, name: "Oran", home: 700, desk: 400, region: "Ouest" },
+      { code: 32, name: "El Bayadh", home: 850, desk: 500, region: "Sud-Ouest" },
+      { code: 33, name: "Illizi", home: 1200, desk: 1100, region: "Grand Sud" },
+      { code: 34, name: "Bordj Bou Arréridj", home: 700, desk: 400, region: "Est" },
+      { code: 35, name: "Boumerdès", home: 500, desk: 300, region: "Grand Alger" },
+      { code: 36, name: "El Tarf", home: 750, desk: 400, region: "Est" },
+      { code: 37, name: "Tindouf", home: 1200, desk: 1000, region: "Grand Sud" },
+      { code: 38, name: "Tissemsilt", home: 700, desk: 400, region: "Centre-Ouest" },
+      { code: 39, name: "El Oued", home: 850, desk: 500, region: "Sud-Est" },
+      { code: 40, name: "Khenchela", home: 750, desk: 400, region: "Est" },
+      { code: 41, name: "Souk Ahras", home: 750, desk: 400, region: "Est" },
+      { code: 42, name: "Tipaza", home: 500, desk: 300, region: "Grand Alger" },
+      { code: 43, name: "Mila", home: 700, desk: 400, region: "Est" },
+      { code: 44, name: "Aïn Defla", home: 650, desk: 350, region: "Centre" },
+      { code: 45, name: "Naâma", home: 850, desk: 500, region: "Sud-Ouest" },
+      { code: 46, name: "Aïn Témouchent", home: 700, desk: 400, region: "Ouest" },
+      { code: 47, name: "Ghardaïa", home: 850, desk: 500, region: "Sud" },
+      { code: 48, name: "Relizane", home: 700, desk: 400, region: "Ouest" },
+      { code: 49, name: "Timimoun", home: 1100, desk: 850, region: "Sud" },
+      { code: 50, name: "Bordj Badji Mokhtar", home: 1300, desk: 1100, region: "Grand Sud" },
+      { code: 51, name: "Ouled Djellal", home: 800, desk: 450, region: "Hauts Plateaux" },
+      { code: 52, name: "Béni Abbès", home: 1100, desk: 850, region: "Sud-Ouest" },
+      { code: 53, name: "In Salah", home: 1200, desk: 950, region: "Grand Sud" },
+      { code: 54, name: "In Guezzam", home: 1400, desk: 1200, region: "Grand Sud" },
+      { code: 55, name: "Touggourt", home: 850, desk: 500, region: "Sud-Est" },
+      { code: 56, name: "Djanet", home: 1300, desk: 1100, region: "Grand Sud" },
+      { code: 57, name: "El M'Ghair", home: 850, desk: 500, region: "Sud-Est" },
+      { code: 58, name: "El Meniaa", home: 900, desk: 550, region: "Sud" }
+    ];
+
+    // ========================================================
+    // 2. COVER DESIGN THEMES (FOR CUSTOM BOOK PERSONALIZER)
+    // ========================================================
+    const coverDesigns = [
+      {
+        id: 'teddy-bear',
+        name: 'Pastel Teddy Bear',
+        image: 'images/custom-book-cover.png',
+        badgeClass: 'bg-lilac-accent/95'
+      },
+      {
+        id: 'dino-adventure',
+        name: 'Dino Adventure',
+        image: 'images/dinosaur-birthday-kit.png',
+        badgeClass: 'bg-emerald-600/95'
+      },
+      {
+        id: 'space-explorer',
+        name: 'Space Explorer',
+        image: 'images/space-activity-pack.png',
+        badgeClass: 'bg-indigo-600/95'
+      },
+      {
+        id: 'princess-fairytale',
+        name: 'Princess Castle',
+        image: 'images/princess-party-set.png',
+        badgeClass: 'bg-pink-600/95'
+      },
+      {
+        id: 'alphabet-safari',
+        name: 'Alphabet Safari',
+        image: 'images/alphabet-activity-book.png',
+        badgeClass: 'bg-purple-700/95'
+      }
+    ];
+
+    // ========================================================
+    // 3. PRODUCT CATALOG: FULL PACKS & INDIVIDUAL ACTIVITY SHEETS
+    // ========================================================
+    const products = [
+      // --- Distinct Individual Activity Sheet Products (Requirement 2) ---
+      {
+        id: 'sheet-math',
+        title: "Math Practice Sheet",
+        category: "Activity Sheets",
+        price: 250,
+        image: "images/sheet-math.png",
+        description: "Standalone laminated practice sheet with additions, subtractions, and cute counting blocks. Reusable with whiteboard markers.",
+        pillClass: "bg-lilacPill-bg text-lilacPill-text border-lilacPill-border",
+        isSheet: true,
+        sheetModuleKey: "Math Practice"
+      },
+      {
+        id: 'sheet-tracing',
+        title: "Letter & Word Tracing Sheet",
+        category: "Activity Sheets",
+        price: 250,
+        image: "images/sheet-tracing.png",
+        description: "Laminated handwriting guide with dotted tracing paths, uppercase/lowercase letters, and fine-motor coordination arrows.",
+        pillClass: "bg-lilacPill-bg text-lilacPill-text border-lilacPill-border",
+        isSheet: true,
+        sheetModuleKey: "Letter & Word Tracing"
+      },
+      {
+        id: 'sheet-puzzles',
+        title: "Mazes & Brain Puzzles Sheet",
+        category: "Activity Sheets",
+        price: 250,
+        image: "images/sheet-puzzles.png",
+        description: "Engaging laminated maze worksheet, spot-the-difference, and logic path activities that boost kids' problem-solving skills.",
+        pillClass: "bg-lilacPill-bg text-lilacPill-text border-lilacPill-border",
+        isSheet: true,
+        sheetModuleKey: "Mazes & Brain Puzzles"
+      },
+      {
+        id: 'sheet-number-tracing',
+        title: "Number Tracing 1 to 20 Sheet",
+        category: "Activity Sheets",
+        price: 250,
+        image: "images/number-tracing-sheets.png",
+        description: "Guided stroke numbers 1 to 20 with animal counting hands and dot patterns. Durable wipe-clean lamination.",
+        pillClass: "bg-lilacPill-bg text-lilacPill-text border-lilacPill-border",
+        isSheet: true,
+        sheetModuleKey: "Number Tracing 1 to 20"
+      },
+
+      // --- Full Books & Themed Bundles ---
+      {
+        id: 1,
+        title: "Alphabet Activity Book",
+        category: "Activity Sheets",
+        price: 1500,
+        image: "images/alphabet-activity-book.png",
+        description: "Comprehensive alphabet discovery workbook with colorful animals, letter tracing, and handwriting practice. Spiral-bound with protective plastic cover.",
+        pillClass: "bg-lilacPill-bg text-lilacPill-text border-lilacPill-border",
+        isSheet: false
+      },
+      {
+        id: 2,
+        title: "Dinosaur Birthday Kit",
+        category: "Birthday Packs",
+        price: 2200,
+        image: "images/dinosaur-birthday-kit.png",
+        description: "Complete prehistoric party celebration pack including dinosaur bunting banners, cupcake toppers, personalized birthday poster, and favor tags.",
+        pillClass: "bg-mintPill-bg text-mintPill-text border-mintPill-border",
+        isSheet: false
+      },
+      {
+        id: 3,
+        title: "Daily Planner",
+        category: "Planners",
+        price: 1200,
+        image: "images/daily-planner.png",
+        description: "Undated aesthetic daily organizer with hourly schedule, top 3 priorities, habit tracker, and gratitude space. Pastel soft lilac finish.",
+        pillClass: "bg-peachPill-bg text-peachPill-text border-peachPill-border",
+        isSheet: false
+      },
+      {
+        id: 4,
+        title: "Animal Flashcards",
+        category: "Flashcards",
+        price: 900,
+        image: "images/animal-flashcards.png",
+        description: "Set of 30 heavy-duty laminated cards with adorable hand-drawn wildlife characters (Lion, Elephant, Giraffe, etc.) and bold easy-read letters.",
+        pillClass: "bg-skyPill-bg text-skyPill-text border-skyPill-border",
+        isSheet: false
+      },
+      {
+        id: 5,
+        title: "Space Activity Pack",
+        category: "Activity Sheets",
+        price: 1800,
+        image: "images/space-activity-pack.png",
+        description: "Intergalactic educational bundle packed with astronaut mazes, constellation connect-the-dots, solar system counting, and alien coloring sheets.",
+        pillClass: "bg-lilacPill-bg text-lilacPill-text border-lilacPill-border",
+        isSheet: false
+      },
+      {
+        id: 6,
+        title: "Princess Party Set",
+        category: "Party",
+        price: 2400,
+        image: "images/princess-party-set.png",
+        description: "Royal fairytale birthday set complete with personalized castle welcome sign, tiara photo props, thank-you cards, and table centerpiece cards.",
+        pillClass: "bg-pinkPill-bg text-pinkPill-text border-pinkPill-border",
+        isSheet: false
+      },
+      {
+        id: 7,
+        title: "Weekly Planner",
+        category: "Planners",
+        price: 1300,
+        image: "images/weekly-planner.png",
+        description: "Pastel mint-sage horizontal desk pad for tracking weekly goals, to-do lists, meal planning, and key reminders with 52 tear-off sheets.",
+        pillClass: "bg-peachPill-bg text-peachPill-text border-peachPill-border",
+        isSheet: false
+      },
+      {
+        id: 8,
+        title: "Number Tracing Sheets Workbook",
+        category: "Activity Sheets",
+        price: 900,
+        image: "images/number-tracing-sheets.png",
+        description: "Complete workbook tracing set numbers 1 to 20 with guide arrows, counting fingers, and dot arrays to build fine-motor kindergarten readiness.",
+        pillClass: "bg-lilacPill-bg text-lilacPill-text border-lilacPill-border",
+        isSheet: false
+      }
+    ];
+
+    // ========================================================
+    // 4. APPLICATION STATE
+    // ========================================================
+    let cart = JSON.parse(localStorage.getItem('yuki_prints_cart')) || [];
+    let currentCategory = 'all';
+
+    // Custom Builder State (with Live Cover & Name Personalizer)
+    const customBuilderState = {
+      basePrice: 1000,
+      pricePerSheet: 200,
+      selectedSheets: ['Math Practice', 'Letter & Word Tracing', 'Mazes & Brain Puzzles'],
+      childName: 'Lina',
+      selectedCover: coverDesigns[0]
+    };
+
+    // Checkout Wilaya & Delivery State
+    let checkoutState = {
+      selectedWilayaCode: 16, // Default Alger
+      deliveryType: 'home'   // 'home' or 'desk'
+    };
+
+    // --- DOM Initialization ---
+    document.addEventListener('DOMContentLoaded', () => {
+      renderProducts();
+      updateCartUI();
+      initCustomBuilder();
+      populateWilayasDropdown();
+    });
+
+    // ========================================================
+    // 5. PRODUCT CATALOG & TWO-BUTTON SHEET CARDS (Requirement 2)
+    // ========================================================
+    function renderProducts() {
+      const container = document.getElementById('product-grid');
+      const noProductsMsg = document.getElementById('no-products-msg');
+      const resultsCount = document.getElementById('results-count');
+
+      const filtered = currentCategory === 'all'
+        ? products
+        : products.filter(p => p.category === currentCategory);
+
+      if (filtered.length === 0) {
+        container.innerHTML = '';
+        noProductsMsg.classList.remove('hidden');
+        resultsCount.textContent = "Showing 0 products";
+        return;
+      }
+
+      noProductsMsg.classList.add('hidden');
+      resultsCount.textContent = `Showing ${filtered.length} curated product${filtered.length > 1 ? 's' : ''}`;
+
+      container.innerHTML = filtered.map(product => {
+        // Individual Activity Sheets feature TWO distinct action buttons
+        const actionButtonsHTML = product.isSheet
+          ? `
+            <div class="space-y-1.5 w-full">
+              <!-- Button 1: Add to Custom Book -->
+              <button onclick="addSheetToCustomBook('${product.sheetModuleKey}')" class="w-full py-2 px-3 rounded-xl bg-purple-50 hover:bg-purple-100 text-purple-800 border border-purple-200 font-bold text-xs transition active:scale-95 flex items-center justify-center gap-1.5 focus:outline-none">
+                <span>🪄</span>
+                <span>Add to Custom Book</span>
+              </button>
+              <!-- Button 2: Buy Single Sheet -->
+              <button onclick="buySingleSheet('${product.id}')" class="w-full py-2 px-3 rounded-xl bg-lilac-soft hover:bg-lilac-accent text-white font-bold text-xs shadow-sm transition active:scale-95 flex items-center justify-center gap-1.5 focus:outline-none">
+                <svg class="w-3.5 h-3.5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M16 11V7a4 4 0 00-8 0v4M5 9h14l1 12H4L5 9z" />
+                </svg>
+                <span>Buy Single Sheet (${product.price} DA)</span>
+              </button>
+            </div>
+          `
+          : `
+            <button onclick="addToCart('${product.id}')" class="w-full py-2.5 px-4 rounded-xl bg-lilac-soft hover:bg-lilac-accent text-white font-bold text-xs sm:text-sm shadow-sm transition active:scale-95 flex items-center justify-center gap-1.5 focus:outline-none">
+              <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M16 11V7a4 4 0 00-8 0v4M5 9h14l1 12H4L5 9z" />
+              </svg>
+              <span>Add to Cart</span>
+            </button>
+          `;
+
+        const badgePill = product.isSheet
+          ? `<span class="inline-block text-[10px] font-bold px-2 py-0.5 rounded-full bg-lilac-100 text-lilac-800 border border-lilac-200">Single Laminated Sheet</span>`
+          : `<span class="inline-block text-[11px] font-bold px-3 py-0.5 rounded-full border shadow-2xs ${product.pillClass}">${product.category}</span>`;
+
+        return `
+          <div class="product-card bg-white border border-purple-100 rounded-3xl p-4 flex flex-col justify-between shadow-card hover:shadow-floating hover:border-purple-300 transition duration-300 group">
+            
+            <div class="relative overflow-hidden rounded-2xl bg-[#FBF9FE] aspect-[4/3] flex items-center justify-center p-2 mb-3">
+              <img src="${product.image}" alt="${product.title}" loading="lazy"
+                   class="w-full h-full object-contain rounded-xl transform transition duration-500 group-hover:scale-105">
+
+              <button onclick="openQuickViewModal('${product.id}')" title="Quick view details" 
+                      class="absolute top-2.5 right-2.5 w-8 h-8 rounded-full bg-white/90 text-purple-700 shadow-sm opacity-0 group-hover:opacity-100 transition duration-200 flex items-center justify-center hover:bg-purple-50">
+                <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 12a3 3 0 11-6 0 3 3 0 016 0z" />
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M2.458 12C3.732 7.943 7.523 5 12 5c4.478 0 8.268 2.943 9.542 7-1.274 4.057-5.064 7-9.542 7-4.477 0-8.268-2.943-9.542-7z" />
+                </svg>
+              </button>
+            </div>
+
+            <div class="space-y-1.5 flex-grow">
+              <h3 class="font-bold text-gray-800 text-sm sm:text-base leading-snug">
+                ${product.title}
+              </h3>
+              <div>${badgePill}</div>
+              <div class="text-sm font-extrabold text-purple-900 pt-0.5">
+                ${product.price.toLocaleString()} ${CURRENCY}
+              </div>
+            </div>
+
+            <div class="pt-3 mt-1 border-t border-purple-50">
+              ${actionButtonsHTML}
+            </div>
+
+          </div>
+        `;
+      }).join('');
+    }
+
+    function filterCategory(cat) {
+      currentCategory = cat;
+
+      document.querySelectorAll('.cat-pill').forEach(btn => {
+        const btnCat = btn.getAttribute('data-cat');
+        if (btnCat === cat) {
+          btn.className = "cat-pill flex-shrink-0 px-6 py-2.5 rounded-full text-sm font-bold flex items-center gap-2 transition duration-200 shadow-pill border bg-lilac-soft text-white border-lilac-soft ring-2 ring-purple-200";
+        } else {
+          btn.className = "cat-pill flex-shrink-0 px-6 py-2.5 rounded-full text-sm font-semibold flex items-center gap-2 transition duration-200 shadow-sm border bg-white text-gray-700 border-gray-100 hover:border-purple-200 hover:bg-purple-50/50";
+        }
+      });
+
+      renderProducts();
+
+      const catalogEl = document.getElementById('catalog');
+      if (catalogEl && (window.scrollY > catalogEl.offsetTop + 100 || window.scrollY < catalogEl.offsetTop - 300)) {
+        catalogEl.scrollIntoView({ behavior: 'smooth' });
+      }
+    }
+
+    // Handler for Button 1: "Add to Custom Book"
+    function addSheetToCustomBook(moduleKey) {
+      if (!customBuilderState.selectedSheets.includes(moduleKey)) {
+        customBuilderState.selectedSheets.push(moduleKey);
+      }
+      
+      // Sync checkbox in builder
+      const cb = document.querySelector(`input[name="custom-sheet"][value="${moduleKey}"]`);
+      if (cb) cb.checked = true;
+
+      updateCustomBookBuilder();
+      showToast(`✨ Added "${moduleKey}" to your Custom Book bundle!`, "success");
+
+      // Smooth scroll gently to custom builder
+      const builderSection = document.getElementById('custom-builder');
+      if (builderSection) {
+        builderSection.scrollIntoView({ behavior: 'smooth' });
+      }
+    }
+
+    // Handler for Button 2: "Buy Single Sheet"
+    function buySingleSheet(productId) {
+      const prod = products.find(p => p.id === productId);
+      if (!prod) return;
+
+      const existingIndex = cart.findIndex(item => !item.isCustom && item.id === prod.id);
+      if (existingIndex > -1) {
+        cart[existingIndex].quantity += 1;
+      } else {
+        cart.push({
+          id: prod.id,
+          isCustom: false,
+          isSingleSheet: true,
+          title: `${prod.title} (Single Sheet)`,
+          category: prod.category,
+          price: prod.price,
+          image: prod.image,
+          quantity: 1
+        });
+      }
+
+      saveCart();
+      updateCartUI();
+      openCartDrawer();
+      showToast(`🌸 Added 1x "${prod.title}" (Single Sheet) to cart!`, "success");
+    }
+
+    // ========================================================
+    // 6. INTERACTIVE BOOK COVER & NAME PERSONALIZER (Requirement 3)
+    // ========================================================
+    function initCustomBuilder() {
+      // 1. Render Cover Design Thumbnails
+      const grid = document.getElementById('cover-designs-grid');
+      if (grid) {
+        grid.innerHTML = coverDesigns.map(c => `
+          <button type="button" onclick="selectCoverDesign('${c.id}')" id="cover-btn-${c.id}"
+                  class="cover-thumb-btn relative aspect-square rounded-xl overflow-hidden border-2 transition transform hover:scale-105 focus:outline-none ${c.id === customBuilderState.selectedCover.id ? 'border-lilac-500 ring-2 ring-purple-300 shadow-md' : 'border-purple-100 hover:border-purple-300'}">
+            <img src="${c.image}" alt="${c.name}" class="w-full h-full object-cover">
+          </button>
+        `).join('');
+      }
+
+      // 2. Child Name / Book Title Input listener
+      const nameInput = document.getElementById('child-name-input');
+      if (nameInput) {
+        nameInput.addEventListener('input', (e) => {
+          const val = e.target.value.trim() || 'Lina';
+          customBuilderState.childName = val;
+          const label = `${val}'s Edition`;
+          document.getElementById('cover-child-name').textContent = label;
+          document.getElementById('modal-preview-name').textContent = label;
+        });
+      }
+
+      updateCustomBookBuilder();
+    }
+
+    function selectCoverDesign(coverId) {
+      const design = coverDesigns.find(c => c.id === coverId);
+      if (!design) return;
+
+      customBuilderState.selectedCover = design;
+
+      // Update UI thumbnails active styling
+      document.querySelectorAll('.cover-thumb-btn').forEach(btn => {
+        btn.classList.remove('border-lilac-500', 'ring-2', 'ring-purple-300', 'shadow-md');
+        btn.classList.add('border-purple-100');
+      });
+      const activeBtn = document.getElementById(`cover-btn-${coverId}`);
+      if (activeBtn) {
+        activeBtn.classList.remove('border-purple-100');
+        activeBtn.classList.add('border-lilac-500', 'ring-2', 'ring-purple-300', 'shadow-md');
+      }
+
+      // Update label and images
+      document.getElementById('selected-cover-label').textContent = `Cover: ${design.name}`;
+      document.getElementById('builder-cover-image').src = design.image;
+      document.getElementById('modal-preview-cover-img').src = design.image;
+      document.getElementById('modal-preview-theme-badge').textContent = `Cover Theme: ${design.name}`;
+
+      showToast(`🎨 Selected cover: ${design.name}`, "info");
+    }
+
+    function updateCustomBookBuilder() {
+      const checkboxes = document.querySelectorAll('input[name="custom-sheet"]:checked');
+      const selected = Array.from(checkboxes).map(cb => cb.value);
+      customBuilderState.selectedSheets = selected;
+
+      const count = selected.length;
+      const countBadge = document.getElementById('sheet-count-text');
+      if (countBadge) {
+        countBadge.textContent = `${count} sheet${count !== 1 ? 's' : ''} selected`;
+      }
+
+      // Calculate dynamic price
+      const calculatedPrice = customBuilderState.basePrice + (count * customBuilderState.pricePerSheet);
+      document.getElementById('custom-book-price').textContent = `${calculatedPrice.toLocaleString()} ${CURRENCY}`;
+      document.getElementById('modal-preview-price').textContent = `${calculatedPrice.toLocaleString()} ${CURRENCY}`;
+
+      // Update preview modal list
+      const listContainer = document.getElementById('modal-included-sheets');
+      if (listContainer) {
+        if (selected.length === 0) {
+          listContainer.innerHTML = '<li class="text-amber-600 font-semibold">⚠️ No sheet modules selected. Please check at least one sheet type!</li>';
+        } else {
+          listContainer.innerHTML = selected.map(s => `
+            <li class="flex items-center gap-2">
+              <span class="w-1.5 h-1.5 rounded-full bg-lilac-accent"></span>
+              <span><strong>${s}:</strong> 10x high-grade laminated practice sheets</span>
+            </li>
+          `).join('');
+        }
+      }
+    }
+
+    function addCustomBookToCart() {
+      if (customBuilderState.selectedSheets.length === 0) {
+        showToast("⚠️ Please select at least one sheet type for your custom book!", "warning");
+        return;
+      }
+
+      const calculatedPrice = customBuilderState.basePrice + (customBuilderState.selectedSheets.length * customBuilderState.pricePerSheet);
+      const childName = customBuilderState.childName || "Lina";
+      const cover = customBuilderState.selectedCover;
+
+      const customItem = {
+        id: `custom-book-${Date.now()}`,
+        isCustom: true,
+        title: `My Custom Activity Book (${childName})`,
+        childName: childName,
+        coverTheme: cover.name,
+        coverImage: cover.image,
+        sheets: [...customBuilderState.selectedSheets],
+        category: "Activity Sheets",
+        price: calculatedPrice,
+        image: cover.image,
+        quantity: 1
+      };
+
+      cart.push(customItem);
+      saveCart();
+      updateCartUI();
+      openCartDrawer();
+      showToast(`✨ Custom Activity Book for "${childName}" added to cart!`, "success");
+    }
+
+    function openBookPreviewModal() {
+      updateCustomBookBuilder();
+      const modal = document.getElementById('book-preview-modal');
+      modal.classList.remove('hidden');
+    }
+
+    function closeBookPreviewModal() {
+      document.getElementById('book-preview-modal').classList.add('hidden');
+    }
+
+    // ========================================================
+    // 7. SHOPPING CART DRAWER MANAGEMENT
+    // ========================================================
+    function openCartDrawer() {
+      const drawer = document.getElementById('cart-drawer');
+      const backdrop = document.getElementById('cart-drawer-backdrop');
+      
+      backdrop.classList.remove('opacity-0', 'pointer-events-none');
+      backdrop.classList.add('opacity-100');
+      
+      drawer.classList.remove('translate-x-full');
+      drawer.classList.add('translate-x-0');
+      document.body.style.overflow = 'hidden';
+    }
+
+    function closeCartDrawer() {
+      const drawer = document.getElementById('cart-drawer');
+      const backdrop = document.getElementById('cart-drawer-backdrop');
+      
+      backdrop.classList.remove('opacity-100');
+      backdrop.classList.add('opacity-0', 'pointer-events-none');
+      
+      drawer.classList.remove('translate-x-0');
+      drawer.classList.add('translate-x-full');
+      document.body.style.overflow = '';
+    }
+
+    function addToCart(productId) {
+      const prod = products.find(p => p.id == productId);
+      if (!prod) return;
+
+      const existingIndex = cart.findIndex(item => !item.isCustom && item.id == productId);
+      if (existingIndex > -1) {
+        cart[existingIndex].quantity += 1;
+      } else {
+        cart.push({
+          id: prod.id,
+          isCustom: false,
+          title: prod.title,
+          category: prod.category,
+          price: prod.price,
+          image: prod.image,
+          quantity: 1
+        });
+      }
+
+      saveCart();
+      updateCartUI();
+      showToast(`🌸 Added "${prod.title}" to cart!`, "success");
+    }
+
+    function updateCartQuantity(index, delta) {
+      if (!cart[index]) return;
+      cart[index].quantity += delta;
+      if (cart[index].quantity <= 0) {
+        cart.splice(index, 1);
+      }
+      saveCart();
+      updateCartUI();
+    }
+
+    function removeCartItem(index) {
+      if (!cart[index]) return;
+      const title = cart[index].title;
+      cart.splice(index, 1);
+      saveCart();
+      updateCartUI();
+      showToast(`Removed "${title}" from cart`, "info");
+    }
+
+    function saveCart() {
+      localStorage.setItem('yuki_prints_cart', JSON.stringify(cart));
+    }
+
+    function updateCartUI() {
+      const badge = document.getElementById('cart-badge');
+      const drawerCount = document.getElementById('drawer-item-count');
+      const container = document.getElementById('cart-items-container');
+      const subtotalEl = document.getElementById('cart-subtotal');
+      const totalEl = document.getElementById('cart-total');
+      const footer = document.getElementById('cart-footer');
+
+      const totalItemsCount = cart.reduce((sum, item) => sum + item.quantity, 0);
+      badge.textContent = totalItemsCount;
+      drawerCount.textContent = `${totalItemsCount} item${totalItemsCount !== 1 ? 's' : ''}`;
+
+      if (cart.length === 0) {
+        container.innerHTML = `
+          <div class="h-full flex flex-col items-center justify-center text-center p-6 space-y-4">
+            <div class="w-20 h-20 rounded-full bg-purple-50 flex items-center justify-center text-4xl shadow-inner">
+              🛒
+            </div>
+            <h4 class="font-display font-bold text-gray-800 text-lg">Your cart is currently empty</h4>
+            <p class="text-xs text-gray-500 max-w-xs leading-relaxed">
+              Explore our custom activity books, individual sheets, and party kits to start shopping!
+            </p>
+            <button onclick="closeCartDrawer();" class="px-6 py-2.5 rounded-full bg-lilac-soft text-white font-bold text-xs shadow-md">
+              Start Shopping
+            </button>
+          </div>
+        `;
+        subtotalEl.textContent = `0 ${CURRENCY}`;
+        totalEl.textContent = `0 ${CURRENCY}`;
+        footer.classList.add('opacity-50', 'pointer-events-none');
+        return;
+      }
+
+      footer.classList.remove('opacity-50', 'pointer-events-none');
+
+      let subtotal = 0;
+
+      container.innerHTML = cart.map((item, index) => {
+        const itemTotal = item.price * item.quantity;
+        subtotal += itemTotal;
+
+        // Custom Book breakdown details
+        const customDetails = item.isCustom
+          ? `<div class="text-[11px] text-purple-800 bg-purple-50/80 p-2 rounded-xl border border-purple-100 mt-1 space-y-0.5">
+               <p><strong>Cover:</strong> ${item.coverTheme || 'Pastel Bear'}</p>
+               <p><strong>Name on Cover:</strong> "${item.childName}"</p>
+               <p class="text-gray-600"><strong>Sheets:</strong> ${item.sheets ? item.sheets.join(', ') : ''}</p>
+             </div>`
+          : '';
+
+        return `
+          <div class="flex items-start gap-3 p-3 rounded-2xl border border-purple-100 bg-white shadow-sm">
+            <div class="w-16 h-16 rounded-xl bg-purple-50/60 flex-shrink-0 overflow-hidden border border-purple-100 p-1">
+              <img src="${item.image}" alt="${item.title}" class="w-full h-full object-contain rounded-lg">
+            </div>
+
+            <div class="flex-grow space-y-1">
+              <div class="flex items-start justify-between">
+                <h4 class="font-bold text-sm text-gray-800 leading-tight">${item.title}</h4>
+                <button onclick="removeCartItem(${index})" aria-label="Remove item" class="text-gray-400 hover:text-red-500 p-1 transition">
+                  <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 7l-.867 12.142A2 2 0 0116.138 21H7.862a2 2 0 01-1.995-1.858L5 7m5 4v6m4-6v6m1-10V4a1 1 0 00-1-1h-4a1 1 0 00-1 1v3M4 7h16" />
+                  </svg>
+                </button>
+              </div>
+
+              <span class="inline-block text-[10px] font-bold px-2 py-0.5 rounded-full bg-purple-100 text-purple-800">
+                ${item.category}
+              </span>
+
+              ${customDetails}
+
+              <div class="flex items-center justify-between pt-1.5">
+                <span class="font-extrabold text-sm text-purple-900">${itemTotal.toLocaleString()} ${CURRENCY}</span>
+                
+                <div class="flex items-center gap-2 bg-purple-50 border border-purple-200 rounded-lg px-2 py-0.5">
+                  <button onclick="updateCartQuantity(${index}, -1)" class="text-purple-700 font-bold hover:text-purple-900 px-1">-</button>
+                  <span class="text-xs font-bold text-gray-800">${item.quantity}</span>
+                  <button onclick="updateCartQuantity(${index}, 1)" class="text-purple-700 font-bold hover:text-purple-900 px-1">+</button>
+                </div>
+              </div>
+
+            </div>
+          </div>
+        `;
+      }).join('');
+
+      subtotalEl.textContent = `${subtotal.toLocaleString()} ${CURRENCY}`;
+      totalEl.textContent = `${subtotal.toLocaleString()} ${CURRENCY}`;
+    }
+
+    // ========================================================
+    // 8. ADVANCED WILAYA PRICING & CHECKOUT SYSTEM (Requirement 1 & 4)
+    // ========================================================
+    function populateWilayasDropdown() {
+      const select = document.getElementById('cust-wilaya-select');
+      if (!select) return;
+
+      select.innerHTML = WILAYA_DELIVERY_DATA.map(w => {
+        const paddedCode = String(w.code).padStart(2, '0');
+        return `<option value="${w.code}" ${w.code === 16 ? 'selected' : ''}>${paddedCode} - ${w.name}</option>`;
+      }).join('');
+
+      updateDeliveryPricingUI();
+    }
+
+    function onWilayaChange() {
+      const select = document.getElementById('cust-wilaya-select');
+      checkoutState.selectedWilayaCode = parseInt(select.value, 10) || 16;
+      updateDeliveryPricingUI();
+    }
+
+    function onDeliveryTypeChange() {
+      const selectedType = document.querySelector('input[name="delivery-mode"]:checked')?.value || 'home';
+      checkoutState.deliveryType = selectedType;
+
+      // Update card borders
+      const homeCard = document.getElementById('delivery-option-home-card');
+      const deskCard = document.getElementById('delivery-option-desk-card');
+      if (selectedType === 'home') {
+        homeCard.className = "p-3 rounded-xl border-2 border-purple-400 bg-purple-50/50 flex items-center justify-between cursor-pointer transition";
+        deskCard.className = "p-3 rounded-xl border border-gray-200 hover:border-purple-200 bg-white flex items-center justify-between cursor-pointer transition";
+      } else {
+        homeCard.className = "p-3 rounded-xl border border-gray-200 hover:border-purple-200 bg-white flex items-center justify-between cursor-pointer transition";
+        deskCard.className = "p-3 rounded-xl border-2 border-emerald-500 bg-emerald-50/50 flex items-center justify-between cursor-pointer transition";
+      }
+
+      updateDeliveryPricingUI();
+    }
+
+    function getSelectedWilaya() {
+      return WILAYA_DELIVERY_DATA.find(w => w.code === checkoutState.selectedWilayaCode) || WILAYA_DELIVERY_DATA[15]; // Default Alger
+    }
+
+    function updateDeliveryPricingUI() {
+      const wilaya = getSelectedWilaya();
+      const homeFeeBadge = document.getElementById('home-fee-badge');
+      const deskFeeBadge = document.getElementById('desk-fee-badge');
+      const regionBadge = document.getElementById('wilaya-region-badge');
+
+      if (homeFeeBadge) homeFeeBadge.textContent = `${wilaya.home} DA`;
+      if (deskFeeBadge) deskFeeBadge.textContent = `${wilaya.desk} DA`;
+      if (regionBadge) regionBadge.textContent = `Zone: ${wilaya.region}`;
+
+      // Calculate totals
+      let subtotal = 0;
+      cart.forEach(item => {
+        subtotal += item.price * item.quantity;
+      });
+
+      const currentFee = checkoutState.deliveryType === 'home' ? wilaya.home : wilaya.desk;
+      const finalTotal = subtotal + currentFee;
+
+      const subtotalValEl = document.getElementById('checkout-subtotal-val');
+      const shippingLabelEl = document.getElementById('checkout-shipping-label');
+      const shippingValEl = document.getElementById('checkout-shipping-val');
+      const finalTotalValEl = document.getElementById('checkout-final-total-val');
+
+      if (subtotalValEl) subtotalValEl.textContent = `${subtotal.toLocaleString()} ${CURRENCY}`;
+      if (shippingLabelEl) {
+        shippingLabelEl.textContent = `Delivery Fee (${wilaya.name} - ${checkoutState.deliveryType === 'home' ? 'Domicile' : 'Stop Desk'}):`;
+      }
+      if (shippingValEl) shippingValEl.textContent = `${currentFee.toLocaleString()} ${CURRENCY}`;
+      if (finalTotalValEl) finalTotalValEl.textContent = `${finalTotal.toLocaleString()} ${CURRENCY}`;
+    }
+
+    function openCheckoutModal() {
+      if (cart.length === 0) {
+        showToast("Your cart is empty!", "warning");
+        return;
+      }
+      closeCartDrawer();
+
+      const modal = document.getElementById('checkout-modal');
+      const itemsPreview = document.getElementById('checkout-items-preview');
+      const summaryCount = document.getElementById('checkout-summary-items-count');
+
+      let totalQty = 0;
+
+      itemsPreview.innerHTML = cart.map(item => {
+        const itemTotal = item.price * item.quantity;
+        totalQty += item.quantity;
+
+        const customTag = item.isCustom
+          ? `<span class="text-[10px] text-purple-700 block">Cover: ${item.coverTheme} | Name: "${item.childName}"</span>`
+          : '';
+
+        return `
+          <div class="py-1 border-b border-purple-50 last:border-none">
+            <div class="flex justify-between font-semibold">
+              <span>• ${item.quantity}x ${item.title}</span>
+              <span class="font-bold text-gray-800">${itemTotal.toLocaleString()} ${CURRENCY}</span>
+            </div>
+            ${customTag}
+          </div>
+        `;
+      }).join('');
+
+      summaryCount.textContent = `${totalQty} item${totalQty !== 1 ? 's' : ''}`;
+      updateDeliveryPricingUI();
+
+      modal.classList.remove('hidden');
+      document.body.style.overflow = 'hidden';
+    }
+
+    function closeCheckoutModal() {
+      document.getElementById('checkout-modal').classList.add('hidden');
+      document.body.style.overflow = '';
+    }
+
+    // ========================================================
+    // 9. WHATSAPP ORDER FORMATTER (Requirement 4)
+    // ========================================================
+    function generateOrderSummaryText() {
+      const name = document.getElementById('cust-name').value.trim();
+      const phone = document.getElementById('cust-phone').value.trim();
+      const commune = document.getElementById('cust-commune').value.trim();
+      const address = document.getElementById('cust-address').value.trim();
+      const notes = document.getElementById('cust-notes').value.trim();
+
+      const wilaya = getSelectedWilaya();
+      const deliveryTypeName = checkoutState.deliveryType === 'home' ? 'At Home (Domicile)' : 'Stop Desk (Bureau Pickup)';
+      const deliveryFee = checkoutState.deliveryType === 'home' ? wilaya.home : wilaya.desk;
+
+      let subtotal = 0;
+      const itemsList = cart.map((item, idx) => {
+        const itemTotal = item.price * item.quantity;
+        subtotal += itemTotal;
+
+        let line = `${idx + 1}. ${item.quantity}x ${item.title} - ${itemTotal.toLocaleString()} DA`;
+        if (item.isCustom) {
+          line += `\n   ↳ Cover Style: ${item.coverTheme || 'Pastel Bear'}`;
+          line += `\n   ↳ Child Name on Cover: ${item.childName}`;
+          if (item.sheets && item.sheets.length > 0) {
+            line += `\n   ↳ Included Sheets: ${item.sheets.join(', ')}`;
+          }
+        }
+        return line;
+      }).join('\n');
+
+      const finalTotal = subtotal + deliveryFee;
+
+      return `🌸 *NEW ORDER - YUKI PRINTS* 🌸
+-----------------------------------------
+👤 *Customer Name:* ${name}
+📞 *Phone Number:* ${phone}
+📍 *Wilaya:* ${String(wilaya.code).padStart(2, '0')} - ${wilaya.name}
+🏙️ *Commune / City:* ${commune}
+🚚 *Delivery Type:* ${deliveryTypeName}
+🏡 *Full Address / Desk:* ${address}
+${notes ? `📝 *Special Notes:* ${notes}\n` : ''}-----------------------------------------
+🛍️ *ORDER ITEMS:*
+${itemsList}
+
+-----------------------------------------
+📦 *Items Subtotal:* ${subtotal.toLocaleString()} DA
+🚚 *Delivery Fee (${wilaya.name}):* ${deliveryFee.toLocaleString()} DA
+💰 *TOTAL AMOUNT PAYABLE:* ${finalTotal.toLocaleString()} DA
+💵 *Payment Method:* Cash on Delivery (COD) / Pickup
+-----------------------------------------
+Thank you for choosing Yuki Prints! 💜`;
+    }
+
+    function handleCheckoutSubmit(e) {
+      e.preventDefault();
+      const summaryText = generateOrderSummaryText();
+      const encodedMessage = encodeURIComponent(summaryText);
+      const whatsappUrl = `https://wa.me/${STORE_WHATSAPP_NUMBER}?text=${encodedMessage}`;
+
+      // Open WhatsApp directly
+      window.open(whatsappUrl, '_blank');
+
+      showToast("Order initiated! Opening WhatsApp with your order details...", "success");
+      closeCheckoutModal();
+    }
+
+    function copyOrderSummaryToClipboard() {
+      const form = document.getElementById('checkout-form');
+      if (!form.checkValidity()) {
+        form.reportValidity();
+        return;
+      }
+
+      const summaryText = generateOrderSummaryText();
+      navigator.clipboard.writeText(summaryText).then(() => {
+        showToast("📋 Order summary copied to clipboard! You can paste it into WhatsApp, SMS, or Messenger.", "success");
+      }).catch(() => {
+        const textarea = document.createElement('textarea');
+        textarea.value = summaryText;
+        document.body.appendChild(textarea);
+        textarea.select();
+        document.execCommand('copy');
+        document.body.removeChild(textarea);
+        showToast("📋 Order summary copied to clipboard!", "success");
+      });
+    }
+
+    // ========================================================
+    // 10. QUICK VIEW & HELPFUL MODALS
+    // ========================================================
+    function openQuickViewModal(productId) {
+      const prod = products.find(p => p.id == productId);
+      if (!prod) return;
+
+      document.getElementById('qv-img').src = prod.image;
+      document.getElementById('qv-img').alt = prod.title;
+      document.getElementById('qv-title').textContent = prod.title;
+      document.getElementById('qv-category').textContent = prod.category;
+      document.getElementById('qv-price').textContent = `${prod.price.toLocaleString()} ${CURRENCY}`;
+      document.getElementById('qv-desc').textContent = prod.description;
+
+      const actionContainer = document.getElementById('qv-action-container');
+      if (prod.isSheet) {
+        actionContainer.innerHTML = `
+          <button onclick="addSheetToCustomBook('${prod.sheetModuleKey}'); closeQuickViewModal();" class="flex-1 py-3 px-3 rounded-xl bg-purple-50 hover:bg-purple-100 text-purple-800 border border-purple-200 font-bold text-xs shadow-sm transition">
+            🪄 Add to Custom Book
+          </button>
+          <button onclick="buySingleSheet('${prod.id}'); closeQuickViewModal();" class="flex-1 py-3 px-3 rounded-xl bg-lilac-soft hover:bg-lilac-accent text-white font-bold text-xs shadow-md transition">
+            🛒 Buy Single Sheet (${prod.price} DA)
+          </button>
+        `;
+      } else {
+        actionContainer.innerHTML = `
+          <button onclick="addToCart('${prod.id}'); closeQuickViewModal();" class="w-full py-3 px-4 rounded-xl bg-lilac-soft hover:bg-lilac-accent text-white font-bold text-sm shadow-md transition flex items-center justify-center gap-2">
+            <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M16 11V7a4 4 0 00-8 0v4M5 9h14l1 12H4L5 9z" />
+            </svg>
+            <span>Add to Cart</span>
+          </button>
+        `;
+      }
+
+      document.getElementById('quickview-modal').classList.remove('hidden');
+    }
+
+    function closeQuickViewModal() {
+      document.getElementById('quickview-modal').classList.add('hidden');
+    }
+
+    function openHelpModal(topic) {
+      const modal = document.getElementById('help-modal');
+      const title = document.getElementById('help-modal-title');
+      const content = document.getElementById('help-modal-content');
+
+      switch (topic) {
+        case 'delivery-pricing':
+          title.textContent = "All 58 Wilayas Delivery Pricing";
+          content.innerHTML = `
+            <div class="space-y-3">
+              <p>We deliver nationwide across all 58 Wilayas of Algeria with payment <strong>100% Cash on Delivery (COD)</strong>!</p>
+              <div class="bg-purple-50 p-3 rounded-xl text-xs space-y-1">
+                <p><strong>Zone 1 (Alger):</strong> 400 DA Home / 250 DA Desk</p>
+                <p><strong>Zone 2 (Blida, Boumerdes, Tipaza):</strong> 500 DA Home / 300 DA Desk</p>
+                <p><strong>Zone 3 (Oran, Constantine, Setif, Annaba...):</strong> 700 DA Home / 400 DA Desk</p>
+                <p><strong>Zone 4 (Ouargla, Ghardaia, Biskra...):</strong> 800–900 DA Home / 450–550 DA Desk</p>
+                <p><strong>Zone 5 (Adrar, Tamanrasset, Illizi, Tindouf...):</strong> 1100–1300 DA Home / 900–1100 DA Desk</p>
+              </div>
+              <p class="text-xs text-gray-500">Exact fees update automatically when selecting your Wilaya in checkout.</p>
+            </div>
+          `;
+          break;
+        case 'how-it-works':
+          title.textContent = "How Ordering Works";
+          content.innerHTML = `
+            <div class="space-y-3">
+              <p><strong>1. Select Sheets or Custom Book:</strong> Buy individual laminated sheets or create a complete spiral book with your child's name and custom cover theme.</p>
+              <p><strong>2. Select Your Wilaya:</strong> Pick your Wilaya from all 58 Wilayas in the checkout modal to get the exact home or stop-desk shipping rate.</p>
+              <p><strong>3. Confirm on WhatsApp:</strong> Order details are sent directly to our WhatsApp service for dispatch confirmation.</p>
+              <p><strong>4. Cash on Delivery:</strong> Pay cash to the courier when you receive your package.</p>
+            </div>
+          `;
+          break;
+        case 'faqs':
+          title.textContent = "Frequently Asked Questions";
+          content.innerHTML = `
+            <div class="space-y-3">
+              <div>
+                <strong class="text-purple-900 block">Can I buy a single laminated sheet?</strong>
+                <p>Yes! Every sheet can be purchased individually for 250 DA or bundled inside a personalized custom spiral book.</p>
+              </div>
+              <div>
+                <strong class="text-purple-900 block">What is the paper quality?</strong>
+                <p>We print on heavy premium paper, fully laminated with rounded corners for toddler and child safety.</p>
+              </div>
+            </div>
+          `;
+          break;
+        case 'about-us':
+          title.textContent = "About Yuki Prints";
+          content.innerHTML = `
+            <p>Welcome to <strong>Yuki Prints</strong>! We are an Algerian creative printables studio dedicated to early childhood learning and custom event stationery.</p>
+          `;
+          break;
+        case 'contact-us':
+          title.textContent = "Contact Us";
+          content.innerHTML = `
+            <div class="space-y-2">
+              <p>📞 <strong>Phone & WhatsApp:</strong> <a href="https://wa.me/213794205496" class="text-purple-700 underline font-bold">0794205496</a></p>
+              <p>📸 <strong>Instagram:</strong> <a href="https://www.instagram.com/yuki.prints.fy/" target="_blank" class="text-purple-700 underline">@yuki.prints.fy</a></p>
+              <p>🎵 <strong>TikTok:</strong> <a href="https://www.tiktok.com/@yuki.prints?lang=en-GB" target="_blank" class="text-purple-700 underline">@yuki.prints</a></p>
+              <p>💬 <strong>Facebook:</strong> <a href="https://www.facebook.com/profile.php?id=61591608031913" target="_blank" class="text-purple-700 underline">Yuki Prints Store</a></p>
+            </div>
+          `;
+          break;
+      }
+
+      modal.classList.remove('hidden');
+    }
+
+    function closeHelpModal() {
+      document.getElementById('help-modal').classList.add('hidden');
+    }
+
+    // --- Mobile Menu Toggle ---
+    function toggleMobileMenu() {
+      const menu = document.getElementById('mobile-menu');
+      const hamburgerIcon = document.getElementById('hamburger-icon');
+      const closeIcon = document.getElementById('close-icon');
+
+      const isHidden = menu.classList.contains('hidden');
+      if (isHidden) {
+        menu.classList.remove('hidden');
+        hamburgerIcon.classList.add('hidden');
+        closeIcon.classList.remove('hidden');
+      } else {
+        menu.classList.add('hidden');
+        hamburgerIcon.classList.remove('hidden');
+        closeIcon.classList.add('hidden');
+      }
+    }
+
+    // --- Toast Notifications ---
+    function showToast(message, type = "info") {
+      const container = document.getElementById('toast-container');
+      const toast = document.createElement('div');
+      
+      let bgClass = "bg-purple-900 text-white";
+      if (type === "success") bgClass = "bg-lilac-800 text-white border border-purple-400";
+      if (type === "warning") bgClass = "bg-amber-600 text-white";
+
+      toast.className = `pointer-events-auto flex items-center gap-2.5 px-4 py-3 rounded-2xl shadow-xl text-xs sm:text-sm font-semibold transition-all duration-300 transform translate-y-4 opacity-0 ${bgClass}`;
+      toast.innerHTML = `<span>${message}</span>`;
+
+      container.appendChild(toast);
+
+      requestAnimationFrame(() => {
+        toast.classList.remove('translate-y-4', 'opacity-0');
+      });
+
+      setTimeout(() => {
+        toast.classList.add('opacity-0', 'translate-y-2');
+        setTimeout(() => toast.remove(), 300);
+      }, 3200);
+    }
+  </script>
+</body>
+</html>
