@@ -1,0 +1,52 @@
+[
+  {
+    "id": 1,
+    "author": "Amel B.",
+    "wilaya": "16 - Alger (Kouba)",
+    "rating": 5,
+    "date": "10 Novembre 2026",
+    "product": "Princess Activity Book & Tracing Pack",
+    "comment": "Livre d'activités magnifique ! Ma fille de 4 ans adore la fiche Dress the Princess et s'exerce au traçage tous les soirs avec le feutre effaçable. Plastification très solide, livraison rapide à domicile en 48h.",
+    "verified": true
+  },
+  {
+    "id": 2,
+    "author": "Karim M.",
+    "wilaya": "31 - Oran",
+    "rating": 5,
+    "date": "04 Novembre 2026",
+    "product": "Pack Rentrée Scolaire Minecraft",
+    "comment": "Commandé pour mon fils en 3ème AP, la qualité d'impression est impeccable ! Les tableaux de multiplication et de soustraction plastifiés l'aident énormément pour ses devoirs. Très bonne communication sur WhatsApp.",
+    "verified": true
+  },
+  {
+    "id": 3,
+    "author": "Yasmine S.",
+    "wilaya": "09 - Blida",
+    "rating": 5,
+    "date": "28 Octobre 2026",
+    "product": "Pack Flashcards 3PS",
+    "comment": "Exactement ce qu'il fallait pour le programme d'anglais du primaire. Les cartes sont bien épaisses, plastifiées et les illustrations sont super claires pour les enfants.",
+    "verified": true
+  },
+  {
+    "id": 4,
+    "author": "Fatima Z.",
+    "wilaya": "15 - Tizi Ouzou",
+    "rating": 5,
+    "date": "22 Octobre 2026",
+    "product": "Gherbal Yennayer & Boîtes Pyramides",
+    "comment": "Le gherbal décoré et les boîtes pyramides ont fait sensation pour la fête de l'école. Travail artisanal minutieux et soigné. Je recommande les yeux fermés !",
+    "verified": true
+  },
+  {
+    "id": 5,
+    "author": "Nadia K.",
+    "wilaya": "25 - Constantine",
+    "rating": 5,
+    "date": "15 Octobre 2026",
+    "product": "My Everything Planner (All-in-One)",
+    "comment": "Superbe planner complet ! Très motivant pour s'organiser au quotidien et planifier les semaines. Papier de très bonne qualité et design pastel très doux.",
+    "verified": true
+  }
+]

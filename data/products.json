@@ -1,197 +1,40 @@
 {
   "store": "Yuki Prints",
+  "tagline": "Custom Printables & Event Packs for Big Moments",
+  "phone": "0794205496",
+  "whatsapp": "213794205496",
   "currency": "DA",
-  "generated_at": "2026-11-15T10:48:00Z",
-  "version": "1.0.1",
+  "sale_event": {
+    "title": "🎉 Offre Spéciale Saison Yennayer & Scolaire",
+    "end_date": "2026-12-31T23:59:59Z",
+    "discount_note": "Profitez de nos kits complets personnalisés au meilleur tarif !"
+  },
+  "delivery_pricing": {
+    "standard_home": 400,
+    "standard_desk": 250,
+    "free_threshold": 6000
+  },
   "categories": [
-    { "id": "all", "name": "All Products" },
-    { "id": "activity-books", "name": "Activity Books" },
-    { "id": "activity-sheets", "name": "Activity Sheets" },
-    { "id": "school-packs", "name": "School Packs" },
-    { "id": "planners", "name": "Planners" },
-    { "id": "flashcards", "name": "Flashcards" },
-    { "id": "party-events", "name": "Party & Events" }
+    { "id": "all", "name": "Tous les Produits" },
+    { "id": "packs", "name": "Packs & Coffrets" },
+    { "id": "activity-books", "name": "Livres d'Activités" },
+    { "id": "activity-sheets", "name": "Fiches Individuelles" },
+    { "id": "school-packs", "name": "Rentrée Scolaire" },
+    { "id": "planners", "name": "Planners & Organisation" },
+    { "id": "flashcards", "name": "Flashcards Primaires" },
+    { "id": "party-events", "name": "Fêtes & Yennayer" }
   ],
   "products": [
-    {
-      "id": "yennayer-gherbal",
-      "name": "Gherbal Yennayer Décoré",
-      "category": "party-events",
-      "price": 750,
-      "price_display": "750 DA",
-      "folder": "images/yennayer-pack",
-      "images": [
-        "images/yennayer-pack/gherbal-750da.webp"
-      ],
-      "is_bundle": false,
-      "sells_as_bundle_only": false,
-      "description": "Gherbal décoré traditionnel et festif pour la célébration de Yennayer. Finition artisanale soignée."
-    },
-    {
-      "id": "yennayer-photo-gherbal",
-      "name": "Photo Gherbal Personnalisée",
-      "category": "party-events",
-      "price": 50,
-      "price_display": "50 DA (Normal) / 100 DA (Plastifié)",
-      "folder": "images/yennayer-pack",
-      "images": [
-        "images/yennayer-pack/photo-gherbal-50da-100da.webp"
-      ],
-      "is_bundle": false,
-      "variants": [
-        { "name": "Impression Normale", "price": 50 },
-        { "name": "Impression Plastifiée", "price": 100 }
-      ],
-      "description": "Photo souvenir personnalisée pour gherbal de Yennayer. Option papier glacé normal ou plastifié haute résistance."
-    },
-    {
-      "id": "yennayer-guirlande",
-      "name": "Guirlande Festive Yennayer",
-      "category": "party-events",
-      "price": 300,
-      "price_display": "300 DA",
-      "folder": "images/yennayer-pack",
-      "images": [
-        "images/yennayer-pack/guirlande-yennayer-300da.webp"
-      ],
-      "is_bundle": false,
-      "description": "Banderole festive Yennayer aux motifs traditionnels berbères pour décorer la fête familiale ou scolaire."
-    },
-    {
-      "id": "yennayer-sac",
-      "name": "Sac Décoré Yennayer",
-      "category": "party-events",
-      "price": 120,
-      "price_display": "120 DA",
-      "folder": "images/yennayer-pack",
-      "images": [
-        "images/yennayer-pack/sac-yennayer-120da.webp"
-      ],
-      "is_bundle": false,
-      "description": "Sac festif décoré pour bonbons et gâteaux traditionnels de Yennayer."
-    },
-    {
-      "id": "yennayer-grande-boite",
-      "name": "Grande Boîte de Friandises Yennayer",
-      "category": "party-events",
-      "price": 120,
-      "price_display": "120 DA",
-      "folder": "images/yennayer-pack",
-      "images": [
-        "images/yennayer-pack/grande-boite-friandises-120da.webp"
-      ],
-      "is_bundle": false,
-      "description": "Grande boîte cartonnée décorée aux motifs de Yennayer pour friandises et douceurs."
-    },
-    {
-      "id": "yennayer-boite-pyramide",
-      "name": "Boîte Pyramide Yennayer (4 Modèles)",
-      "category": "party-events",
-      "price": 120,
-      "price_display": "120 DA / unité",
-      "folder": "images/yennayer-pack",
-      "images": [
-        "images/yennayer-pack/boite-pyramide-1-120da.webp",
-        "images/yennayer-pack/boite-pyramide-2-120da.webp",
-        "images/yennayer-pack/boite-pyramide-3-120da.webp",
-        "images/yennayer-pack/boite-pyramide-4-120da.webp"
-      ],
-      "is_bundle": false,
-      "description": "Boîtes pyramidales élégantes disponibles en 4 designs assortis pour friandises."
-    },
-    {
-      "id": "yennayer-boite-ronde",
-      "name": "Boîte Ronde Yennayer",
-      "category": "party-events",
-      "price": 60,
-      "price_display": "60 DA (Vide) / 100 DA (Remplie)",
-      "folder": "images/yennayer-pack",
-      "images": [
-        "images/yennayer-pack/boite-ronde-60da-100da.webp"
-      ],
-      "is_bundle": false,
-      "variants": [
-        { "name": "Boîte Ronde Vide", "price": 60 },
-        { "name": "Boîte Ronde Remplie de Friandises", "price": 100 }
-      ],
-      "description": "Boîte ronde personnalisée Yennayer disponible vide ou garnie de bonbons."
-    },
-    {
-      "id": "yennayer-bougie",
-      "name": "Bougie Décorative Yennayer",
-      "category": "party-events",
-      "price": 100,
-      "price_display": "100 DA",
-      "folder": "images/yennayer-pack",
-      "images": [
-        "images/yennayer-pack/bougie-100da.webp"
-      ],
-      "is_bundle": false,
-      "description": "Bougie décorée pour la table festive de Yennayer."
-    },
-    {
-      "id": "yennayer-batonnet-bonbon",
-      "name": "Bâtonnet Bonbon Décoré Yennayer",
-      "category": "party-events",
-      "price": 50,
-      "price_display": "50 DA",
-      "folder": "images/yennayer-pack",
-      "images": [
-        "images/yennayer-pack/batonnet-bonbon-50da.webp"
-      ],
-      "is_bundle": false,
-      "description": "Bâtonnets sucrés présentés sous emballage thématique Yennayer."
-    },
-    {
-      "id": "yennayer-sucette-decoree",
-      "name": "Sucette Décorée Yennayer",
-      "category": "party-events",
-      "price": 40,
-      "price_display": "40 DA",
-      "folder": "images/yennayer-pack",
-      "images": [
-        "images/yennayer-pack/sucette-decoree-40da.webp"
-      ],
-      "is_bundle": false,
-      "description": "Sucette avec étiquette personnalisée fête de Yennayer."
-    },
-    {
-      "id": "pack-anniversaire-complet",
-      "name": "Pack Anniversaire Fête Complet",
-      "category": "party-events",
-      "price": 3800,
-      "price_display": "3800 DA",
-      "folder": "images/pack-anniversaire",
-      "images": [
-        "images/pack-anniversaire/cover-pack-anniversaire-3800da.webp",
-        "images/pack-anniversaire/assiettes.webp",
-        "images/pack-anniversaire/boite-bonbon.webp",
-        "images/pack-anniversaire/boite-popcorn.webp",
-        "images/pack-anniversaire/cake-toppers.webp",
-        "images/pack-anniversaire/serviettes-et-fourchettes.webp",
-        "images/pack-anniversaire/cupcake-toppers.webp",
-        "images/pack-anniversaire/gobelets-et-pailles.webp"
-      ],
-      "is_bundle": true,
-      "sells_as_bundle_only": true,
-      "bundle_items": [
-        "Assiettes festives à thème",
-        "Boîtes à bonbons personnalisées",
-        "Boîtes à popcorn",
-        "Grand Cake Topper personnalisé",
-        "Serviettes et fourchettes décorées",
-        "Cupcake Toppers assortis",
-        "Gobelets et pailles décorés"
-      ],
-      "description": "Kit anniversaire tout-en-un comprenant la vaisselle de fête personnalisée, les boîtes cadeaux, toppers de gâteaux et décorations de table."
-    },
     {
       "id": "minecraft-pack-scolaire",
       "name": "Pack Rentrée Scolaire Minecraft",
       "category": "school-packs",
       "price": 1500,
       "price_display": "1500 DA",
+      "is_pack": true,
+      "badge": "Pack Complet",
       "folder": "images/minecraft-pack",
+      "cover_image": "images/minecraft-pack/cover-minecraft-pack-1500da.webp",
       "images": [
         "images/minecraft-pack/cover-minecraft-pack-1500da.webp",
         "images/minecraft-pack/cartes-tables-multiplication-400da.webp",
@@ -204,20 +47,18 @@
         "images/minecraft-pack/tableau-multiplication-120da.webp",
         "images/minecraft-pack/tableau-soustraction-120da.webp"
       ],
-      "is_bundle": true,
-      "sells_as_bundle_only": false,
-      "bundle_items": [
-        "Cartes de tables de multiplication (400 DA)",
-        "Planche d'étiquettes de cahier personnalisées (200 DA)",
-        "Bloc-notes / Notepad Minecraft (300 DA)",
-        "Règle personnalisée Minecraft (20 DA)",
-        "Tableau plastifié d'addition (120 DA)",
-        "Tableau d'emploi du temps plastifié (100 DA)",
-        "Tableau d'apprentissage de l'horloge (120 DA)",
-        "Tableau plastifié de multiplication (120 DA)",
-        "Tableau plastifié de soustraction (120 DA)"
-      ],
-      "description": "Pack scolaire complet Minecraft : tableaux de calcul effaçables, cartes de multiplication, règle, bloc-notes et étiquettes."
+      "description": "Le pack ultime pour les fans de Minecraft ! Contient 9 fournitures scolaires plastifiées réutilisables et bloc-notes.",
+      "pack_items": [
+        { "id": "mc-cartes-tables", "name": "Cartes de tables de multiplication Minecraft", "price": 400, "image": "images/minecraft-pack/cartes-tables-multiplication-400da.webp" },
+        { "id": "mc-etiquettes", "name": "Planche d'étiquettes de cahier Minecraft", "price": 200, "image": "images/minecraft-pack/etiquettes-cahier-200da.webp" },
+        { "id": "mc-notepad", "name": "Notepad / Bloc-notes Minecraft", "price": 300, "image": "images/minecraft-pack/notepad-300da.webp" },
+        { "id": "mc-regle", "name": "Règle personnalisée Minecraft", "price": 20, "image": "images/minecraft-pack/regle-20da.webp" },
+        { "id": "mc-tab-addition", "name": "Tableau plastifié d'addition Minecraft", "price": 120, "image": "images/minecraft-pack/tableau-addition-120da.webp" },
+        { "id": "mc-tab-emploi", "name": "Tableau d'emploi du temps Minecraft", "price": 100, "image": "images/minecraft-pack/tableau-emploi-du-temps-100da.webp" },
+        { "id": "mc-tab-horloge", "name": "Tableau d'apprentissage horloge Minecraft", "price": 120, "image": "images/minecraft-pack/tableau-horloge-120da.webp" },
+        { "id": "mc-tab-mult", "name": "Tableau plastifié de multiplication Minecraft", "price": 120, "image": "images/minecraft-pack/tableau-multiplication-120da.webp" },
+        { "id": "mc-tab-sous", "name": "Tableau plastifié de soustraction Minecraft", "price": 120, "image": "images/minecraft-pack/tableau-soustraction-120da.webp" }
+      ]
     },
     {
       "id": "spiderman-pack-scolaire",
@@ -225,7 +66,10 @@
       "category": "school-packs",
       "price": 1500,
       "price_display": "1500 DA",
+      "is_pack": true,
+      "badge": "Pack Complet",
       "folder": "images/spiderman-pack",
+      "cover_image": "images/spiderman-pack/cover-spiderman-pack-1500da.webp",
       "images": [
         "images/spiderman-pack/cover-spiderman-pack-1500da.webp",
         "images/spiderman-pack/cartes-tables-multiplication-400da.webp",
@@ -238,244 +82,29 @@
         "images/spiderman-pack/tableau-multiplication-120da.webp",
         "images/spiderman-pack/tableau-soustraction-120da.webp"
       ],
-      "is_bundle": true,
-      "sells_as_bundle_only": false,
-      "bundle_items": [
-        "Cartes de tables de multiplication (400 DA)",
-        "Planche d'étiquettes de cahier Spiderman (200 DA)",
-        "Bloc-notes / Notepad Spiderman (300 DA)",
-        "Règle Spiderman (20 DA)",
-        "Tableau plastifié d'addition (120 DA)",
-        "Tableau d'emploi du temps plastifié (100 DA)",
-        "Tableau d'apprentissage de l'horloge (120 DA)",
-        "Tableau plastifié de multiplication (120 DA)",
-        "Tableau plastifié de soustraction (120 DA)"
-      ],
-      "description": "Pack scolaire complet Spiderman : tableaux de mathématiques effaçables, emploi du temps, règle, cartes et stickers de cahier."
-    },
-    {
-      "id": "tableau-de-conversion",
-      "name": "Tableau de Conversion Plastifié (Unités de Mesure)",
-      "category": "school-packs",
-      "price": 100,
-      "price_display": "100 DA",
-      "folder": "images",
-      "images": [
-        "images/tableau-de-conversion-100da.webp"
-      ],
-      "is_bundle": false,
-      "description": "Fiche plastifiée effaçable pour conversion métrique et unités de mesure scolaire."
-    },
-    {
-      "id": "princess-activity-book",
-      "name": "Princess Activity & Tracing Book Pack",
-      "category": "activity-books",
-      "price": 2500,
-      "price_display": "2500 DA",
-      "folder": "images/princess-book",
-      "images": [
-        "images/princess-book/cover-princess-book-2500da.webp",
-        "images/princess-book/dress-the-princess-500da.webp",
-        "images/princess-book/feed-the-princess-500da.webp",
-        "images/princess-book/bug-tracing-activity-100da.webp",
-        "images/princess-book/color-by-numbers-100da.webp",
-        "images/princess-book/clean-dirty-objects-200da.webp",
-        "images/princess-book/count-with-icecream-200da.webp",
-        "images/princess-book/shape-games-100da.webp",
-        "images/princess-book/unplugged-coding-200da.webp",
-        "images/princess-book/write-your-name-page-200da.webp"
-      ],
-      "is_bundle": true,
-      "sells_as_bundle_only": false,
-      "description": "Livre d'activités complet plastifié et relié avec feutre effaçable. Comprend 9 fiches d'activités dont Dress & Feed Princess."
-    },
-    {
-      "id": "animal-activity-book",
-      "name": "Animal Activity Book & Tracing Pack",
-      "category": "activity-books",
-      "price": 3000,
-      "price_display": "3000 DA",
-      "folder": "images/animal-activity-book",
-      "images": [
-        "images/animal-activity-book/cover-animal-activity-book-pack-3000da.webp",
-        "images/animal-activity-book/forest-animals-200da.webp",
-        "images/animal-activity-book/interior-page-01.webp",
-        "images/animal-activity-book/interior-page-02.webp",
-        "images/animal-activity-book/interior-page-03.webp",
-        "images/animal-activity-book/interior-page-04.webp",
-        "images/animal-activity-book/interior-page-05.webp",
-        "images/animal-activity-book/interior-page-06.webp",
-        "images/animal-activity-book/interior-page-07.webp",
-        "images/animal-activity-book/interior-page-08.webp",
-        "images/animal-activity-book/interior-page-09.webp",
-        "images/animal-activity-book/interior-page-10.webp",
-        "images/animal-activity-book/interior-page-11.webp"
-      ],
-      "is_bundle": true,
-      "sells_as_bundle_only": false,
-      "description": "Pack livre d'activités relié et plastifié sur le thème des animaux avec 11 pages d'exercices d'apprentissage réutilisables."
-    },
-    {
-      "id": "sheet-dress-the-princess",
-      "name": "Dress the Princess (Fiche Plastifiée Interactive)",
-      "category": "activity-sheets",
-      "price": 500,
-      "price_display": "500 DA",
-      "folder": "images/custom-activity-book",
-      "images": [
-        "images/custom-activity-book/dress-the-princess-500da.webp"
-      ],
-      "is_bundle": false,
-      "is_sheet": true,
-      "description": "Fiche interactive plastifiée avec vêtements et accessoires détachables pour habiller la princesse."
-    },
-    {
-      "id": "sheet-feed-the-princess",
-      "name": "Feed the Princess (Fiche Plastifiée Interactive)",
-      "category": "activity-sheets",
-      "price": 500,
-      "price_display": "500 DA",
-      "folder": "images/custom-activity-book",
-      "images": [
-        "images/custom-activity-book/feed-the-princess-500da.webp"
-      ],
-      "is_bundle": false,
-      "is_sheet": true,
-      "description": "Fiche de jeu éducative interactive plastifiée pour nourrir la princesse avec différents aliments."
-    },
-    {
-      "id": "sheet-forest-animals",
-      "name": "Forest Animals Tracing & Matching Sheet",
-      "category": "activity-sheets",
-      "price": 200,
-      "price_display": "200 DA",
-      "folder": "images/custom-activity-book",
-      "images": [
-        "images/custom-activity-book/forest-animals-200da.webp"
-      ],
-      "is_bundle": false,
-      "is_sheet": true,
-      "description": "Fiche plastifiée d'identification et de traçage des animaux de la forêt."
-    },
-    {
-      "id": "sheet-bug-tracing",
-      "name": "Bug Tracing & Pre-Writing Lines Sheet",
-      "category": "activity-sheets",
-      "price": 100,
-      "price_display": "100 DA",
-      "folder": "images/custom-activity-book",
-      "images": [
-        "images/custom-activity-book/bug-tracing-activity-100da.webp"
-      ],
-      "is_bundle": false,
-      "is_sheet": true,
-      "description": "Fiche plastifiée de pré-écriture avec lignes ondulées, zigzag et boucles guidées par de mignons insectes."
-    },
-    {
-      "id": "sheet-clean-dirty-objects",
-      "name": "Clean vs Dirty Objects Activity Sheet",
-      "category": "activity-sheets",
-      "price": 200,
-      "price_display": "200 DA",
-      "folder": "images/custom-activity-book",
-      "images": [
-        "images/custom-activity-book/clean-dirty-objects-200da.webp"
-      ],
-      "is_bundle": false,
-      "is_sheet": true,
-      "description": "Fiche d'association et d'apprentissage des bonnes habitudes d'hygiène et propreté."
-    },
-    {
-      "id": "sheet-color-by-numbers",
-      "name": "Color by Numbers Practice Sheet",
-      "category": "activity-sheets",
-      "price": 100,
-      "price_display": "100 DA",
-      "folder": "images/custom-activity-book",
-      "images": [
-        "images/custom-activity-book/color-by-numbers-100da.webp"
-      ],
-      "is_bundle": false,
-      "is_sheet": true,
-      "description": "Coloriage magique guidé par numéros et couleurs réutilisable à l'infini avec feutre effaçable."
-    },
-    {
-      "id": "sheet-count-with-icecream",
-      "name": "Count with Ice Cream Math Sheet",
-      "category": "activity-sheets",
-      "price": 200,
-      "price_display": "200 DA",
-      "folder": "images/custom-activity-book",
-      "images": [
-        "images/custom-activity-book/count-with-icecream-200da.webp"
-      ],
-      "is_bundle": false,
-      "is_sheet": true,
-      "description": "Fiche ludique d'initiation au calcul et dénombrement avec des cornets de glaces gourmands."
-    },
-    {
-      "id": "sheet-shape-games",
-      "name": "Shape Games & Matching Sheet",
-      "category": "activity-sheets",
-      "price": 100,
-      "price_display": "100 DA",
-      "folder": "images/custom-activity-book",
-      "images": [
-        "images/custom-activity-book/shape-games-100da.webp"
-      ],
-      "is_bundle": false,
-      "is_sheet": true,
-      "description": "Reconnaissance des formes géométriques de base (rond, triangle, carré, rectangle)."
-    },
-    {
-      "id": "sheet-unplugged-coding",
-      "name": "Unplugged Coding Logic Sheet",
-      "category": "activity-sheets",
-      "price": 200,
-      "price_display": "200 DA",
-      "folder": "images/custom-activity-book",
-      "images": [
-        "images/custom-activity-book/unplugged-coding-200da.webp"
-      ],
-      "is_bundle": false,
-      "is_sheet": true,
-      "description": "Initiation à la logique algorithmique déconnectée avec flèches de déplacement et labyrinthe."
-    },
-    {
-      "id": "sheet-write-your-name",
-      "name": "Write Your Name Personalized Practice Sheet",
-      "category": "activity-sheets",
-      "price": 200,
-      "price_display": "200 DA",
-      "folder": "images/custom-activity-book",
-      "images": [
-        "images/custom-activity-book/write-your-name-page-200da.webp"
-      ],
-      "is_bundle": false,
-      "is_sheet": true,
-      "description": "Fiche personnalisée pour apprendre à tracer et écrire son prénom en lettres scriptes et cursives."
-    },
-    {
-      "id": "sheet-pizza-game",
-      "name": "Pizza Game Fractions & Toppings Sheet",
-      "category": "activity-sheets",
-      "price": 200,
-      "price_display": "200 DA",
-      "folder": "images",
-      "images": [
-        "images/pizza-game-200da.webp"
-      ],
-      "is_bundle": false,
-      "is_sheet": true,
-      "description": "Fiche d'apprentissage des fractions et du partage équitable avec des parts de pizza."
+      "description": "Le pack super-héros complet Spiderman pour motiver l'enfant à l'école et à la maison.",
+      "pack_items": [
+        { "id": "spider-cartes-tables", "name": "Cartes de tables de multiplication Spiderman", "price": 400, "image": "images/spiderman-pack/cartes-tables-multiplication-400da.webp" },
+        { "id": "spider-etiquettes", "name": "Planche d'étiquettes de cahier Spiderman", "price": 200, "image": "images/spiderman-pack/etiquettes-cahier-200da.webp" },
+        { "id": "spider-notepad", "name": "Notepad / Bloc-notes Spiderman", "price": 300, "image": "images/spiderman-pack/notepad-300da.webp" },
+        { "id": "spider-regle", "name": "Règle personnalisée Spiderman", "price": 20, "image": "images/spiderman-pack/regle-spiderman-20da.webp" },
+        { "id": "spider-tab-addition", "name": "Tableau plastifié d'addition Spiderman", "price": 120, "image": "images/spiderman-pack/tableau-addition-120da.webp" },
+        { "id": "spider-tab-emploi", "name": "Tableau d'emploi du temps Spiderman", "price": 100, "image": "images/spiderman-pack/tableau-emploi-du-temps-100da.webp" },
+        { "id": "spider-tab-horloge", "name": "Tableau d'apprentissage horloge Spiderman", "price": 120, "image": "images/spiderman-pack/tableau-horloge-120da.webp" },
+        { "id": "spider-tab-mult", "name": "Tableau plastifié de multiplication Spiderman", "price": 120, "image": "images/spiderman-pack/tableau-multiplication-120da.webp" },
+        { "id": "spider-tab-sous", "name": "Tableau plastifié de soustraction Spiderman", "price": 120, "image": "images/spiderman-pack/tableau-soustraction-120da.webp" }
+      ]
     },
     {
       "id": "my-everything-planner-bundle",
-      "name": "My Everything Planner (Pack All-In-One)",
+      "name": "My Everything Planner (Coffret Complet)",
       "category": "planners",
       "price": 3000,
       "price_display": "3000 DA",
+      "is_pack": true,
+      "badge": "Best Seller",
       "folder": "images/my-everything-planner",
+      "cover_image": "images/my-everything-planner/cover-my-everything-planner-500da.webp",
       "images": [
         "images/my-everything-planner/cover-my-everything-planner-500da.webp",
         "images/my-everything-planner/daily-planner-cover-600da.webp",
@@ -496,17 +125,471 @@
         "images/my-everything-planner/planner-interior-08.webp",
         "images/my-everything-planner/planner-interior-calendar-10.webp"
       ],
-      "is_bundle": true,
-      "sells_as_bundle_only": false,
-      "bundle_items": [
-        "Couverture rigide personnalisée My Everything Planner",
-        "Daily Planner 50 pages (600 DA)",
-        "Weekly Planner 50 pages (1000 DA)",
-        "Monthly Planner & Calendrier (200 DA)",
-        "Summary Sheets 10 pages (200 DA)",
-        "Thoughts and Notes 50 pages (200 DA)"
+      "description": "L'ensemble complet d'organisation : couverture rigide 500 DA, Daily 50p, Weekly 50p, Monthly, Fiches récap et Carnet de notes.",
+      "pack_items": [
+        { "id": "planner-cover-solo", "name": "Couverture Rigide My Everything Planner", "price": 500, "image": "images/my-everything-planner/cover-my-everything-planner-500da.webp" },
+        { "id": "planner-daily-600", "name": "Daily Planner (50 Pages)", "price": 600, "image": "images/my-everything-planner/daily-planner-50p-600da.webp" },
+        { "id": "planner-weekly-1000", "name": "Weekly Planner (50 Pages)", "price": 1000, "image": "images/my-everything-planner/weekly-planner-50p-1000da.webp" },
+        { "id": "planner-monthly-200", "name": "Monthly Planner & Calendrier", "price": 200, "image": "images/my-everything-planner/monthly-planner-200da.webp" },
+        { "id": "planner-summary-sheets", "name": "Summary Sheets (Pack 10 Fiches)", "price": 200, "image": "images/my-everything-planner/summary-sheets-10-200da.webp" },
+        { "id": "planner-thoughts-notes", "name": "Thoughts & Notes (50 Pages)", "price": 200, "image": "images/my-everything-planner/thoughts-and-notes-50p-200da.webp" }
+      ]
+    },
+    {
+      "id": "princess-activity-book",
+      "name": "Princess Activity Book & Tracing Pack",
+      "category": "activity-books",
+      "price": 2500,
+      "price_display": "2500 DA",
+      "is_pack": true,
+      "badge": "Top Filles",
+      "folder": "images/princess-book",
+      "cover_image": "images/princess-book/cover-princess-book-2500da.webp",
+      "images": [
+        "images/princess-book/cover-princess-book-2500da.webp",
+        "images/princess-book/dress-the-princess-500da.webp",
+        "images/princess-book/feed-the-princess-500da.webp",
+        "images/princess-book/bug-tracing-activity-100da.webp",
+        "images/princess-book/color-by-numbers-100da.webp",
+        "images/princess-book/clean-dirty-objects-200da.webp",
+        "images/princess-book/count-with-icecream-200da.webp",
+        "images/princess-book/shape-games-100da.webp",
+        "images/princess-book/unplugged-coding-200da.webp",
+        "images/princess-book/write-your-name-page-200da.webp"
       ],
-      "description": "L'organiseur ultime regroupant toutes les méthodes de planification : quotidien, hebdomadaire, mensuel, carnet de notes et fiches récapitulatives."
+      "description": "Livre relié avec feutre effaçable. Comprend les 9 fiches d'activités interactives pour éveiller les compétences motrices et cognitives.",
+      "pack_items": [
+        { "id": "sheet-dress-the-princess", "name": "Dress the Princess (Fiche Interactive)", "price": 500, "image": "images/princess-book/dress-the-princess-500da.webp" },
+        { "id": "sheet-feed-the-princess", "name": "Feed the Princess (Fiche Interactive)", "price": 500, "image": "images/princess-book/feed-the-princess-500da.webp" },
+        { "id": "sheet-bug-tracing", "name": "Bug Tracing Practice", "price": 100, "image": "images/princess-book/bug-tracing-activity-100da.webp" },
+        { "id": "sheet-color-by-numbers", "name": "Color by Numbers", "price": 100, "image": "images/princess-book/color-by-numbers-100da.webp" },
+        { "id": "sheet-clean-dirty-objects", "name": "Clean vs Dirty Objects", "price": 200, "image": "images/princess-book/clean-dirty-objects-200da.webp" },
+        { "id": "sheet-count-with-icecream", "name": "Count with Ice Cream Math", "price": 200, "image": "images/princess-book/count-with-icecream-200da.webp" },
+        { "id": "sheet-shape-games", "name": "Shape Games & Matching", "price": 100, "image": "images/princess-book/shape-games-100da.webp" },
+        { "id": "sheet-unplugged-coding", "name": "Unplugged Coding Logic", "price": 200, "image": "images/princess-book/unplugged-coding-200da.webp" },
+        { "id": "sheet-write-your-name", "name": "Write Your Name Sheet", "price": 200, "image": "images/princess-book/write-your-name-page-200da.webp" }
+      ]
+    },
+    {
+      "id": "animal-activity-book",
+      "name": "Animal Activity Book & Tracing Pack",
+      "category": "activity-books",
+      "price": 3000,
+      "price_display": "3000 DA",
+      "is_pack": true,
+      "badge": "Éducatif",
+      "folder": "images/animal-activity-book",
+      "cover_image": "images/animal-activity-book/cover-animal-activity-book-pack-3000da.webp",
+      "images": [
+        "images/animal-activity-book/cover-animal-activity-book-pack-3000da.webp",
+        "images/animal-activity-book/forest-animals-200da.webp",
+        "images/animal-activity-book/interior-page-01.webp",
+        "images/animal-activity-book/interior-page-02.webp",
+        "images/animal-activity-book/interior-page-03.webp",
+        "images/animal-activity-book/interior-page-04.webp",
+        "images/animal-activity-book/interior-page-05.webp",
+        "images/animal-activity-book/interior-page-06.webp",
+        "images/animal-activity-book/interior-page-07.webp",
+        "images/animal-activity-book/interior-page-08.webp",
+        "images/animal-activity-book/interior-page-09.webp",
+        "images/animal-activity-book/interior-page-10.webp",
+        "images/animal-activity-book/interior-page-11.webp"
+      ],
+      "description": "Livre d'activités grand format sur le thème des animaux avec couverture illustrée, fiche animaux de la forêt et 11 pages intérieures d'exercices plastifiés.",
+      "pack_items": [
+        { "id": "sheet-forest-animals", "name": "Forest Animals Tracing Sheet", "price": 200, "image": "images/animal-activity-book/forest-animals-200da.webp" }
+      ]
+    },
+    {
+      "id": "pack-anniversaire-complet",
+      "name": "Pack Anniversaire Complet (Thème Fête)",
+      "category": "party-events",
+      "price": 3800,
+      "price_display": "3800 DA",
+      "is_pack": true,
+      "badge": "Fête Complète",
+      "folder": "images/pack-anniversaire",
+      "cover_image": "images/pack-anniversaire/cover-pack-anniversaire-3800da.webp",
+      "images": [
+        "images/pack-anniversaire/cover-pack-anniversaire-3800da.webp",
+        "images/pack-anniversaire/assiettes.webp",
+        "images/pack-anniversaire/boite-bonbon.webp",
+        "images/pack-anniversaire/boite-popcorn.webp",
+        "images/pack-anniversaire/cake-toppers.webp",
+        "images/pack-anniversaire/serviettes-et-fourchettes.webp",
+        "images/pack-anniversaire/cupcake-toppers.webp",
+        "images/pack-anniversaire/gobelets-et-pailles.webp"
+      ],
+      "description": "Kit complet de décoration pour anniversaire : vaisselle thématique, boîtes cadeaux, cake toppers, serviettes et gobelets assortis (vendu en pack complet).",
+      "pack_items": [
+        { "name": "Assiettes festives à thème", "price": null, "image": "images/pack-anniversaire/assiettes.webp" },
+        { "name": "Boîtes à bonbons personnalisées", "price": null, "image": "images/pack-anniversaire/boite-bonbon.webp" },
+        { "name": "Boîtes à popcorn", "price": null, "image": "images/pack-anniversaire/boite-popcorn.webp" },
+        { "name": "Grand Cake Topper personnalisé", "price": null, "image": "images/pack-anniversaire/cake-toppers.webp" },
+        { "name": "Serviettes et fourchettes décorées", "price": null, "image": "images/pack-anniversaire/serviettes-et-fourchettes.webp" },
+        { "name": "Cupcake Toppers", "price": null, "image": "images/pack-anniversaire/cupcake-toppers.webp" },
+        { "name": "Gobelets et pailles décorés", "price": null, "image": "images/pack-anniversaire/gobelets-et-pailles.webp" }
+      ]
+    },
+    {
+      "id": "flashcards-3ps-pack",
+      "name": "Pack Flashcards 3PS (7 Thèmes - 3ème Primaire)",
+      "category": "flashcards",
+      "price": 7120,
+      "price_display": "7120 DA",
+      "is_pack": true,
+      "badge": "3ème AP",
+      "folder": "images/3ps-flashcards",
+      "cover_image": "images/3ps-flashcards/colors-and-prepositions-880da.webp",
+      "images": [
+        "images/3ps-flashcards/colors-and-prepositions-880da.webp",
+        "images/3ps-flashcards/greetings-school-objects-800da.webp",
+        "images/3ps-flashcards/parts-of-the-house-and-prepositions-800da.webp",
+        "images/3ps-flashcards/party-objects-and-parts-of-the-face-1040da.webp",
+        "images/3ps-flashcards/pets-1120da.webp",
+        "images/3ps-flashcards/school-subjects-640da.webp",
+        "images/3ps-flashcards/toys-640da.webp"
+      ],
+      "description": "Pack éducatif complet 3ème Primaire d'anglais comprenant les 7 séries plastifiées (vendu en pack complet).",
+      "pack_items": [
+        { "name": "Colors & Prepositions (880 DA)", "price": null, "image": "images/3ps-flashcards/colors-and-prepositions-880da.webp" },
+        { "name": "Greetings & School Objects (800 DA)", "price": null, "image": "images/3ps-flashcards/greetings-school-objects-800da.webp" },
+        { "name": "Parts of the House & Prepositions (800 DA)", "price": null, "image": "images/3ps-flashcards/parts-of-the-house-and-prepositions-800da.webp" },
+        { "name": "Party Objects & Parts of the Face (1040 DA)", "price": null, "image": "images/3ps-flashcards/party-objects-and-parts-of-the-face-1040da.webp" },
+        { "name": "Pets (1120 DA)", "price": null, "image": "images/3ps-flashcards/pets-1120da.webp" },
+        { "name": "School Subjects (640 DA)", "price": null, "image": "images/3ps-flashcards/school-subjects-640da.webp" },
+        { "name": "Toys (640 DA)", "price": null, "image": "images/3ps-flashcards/toys-640da.webp" }
+      ]
+    },
+    {
+      "id": "flashcards-4ps-pack",
+      "name": "Pack Flashcards 4PS (9 Thèmes - 4ème Primaire)",
+      "category": "flashcards",
+      "price": 10960,
+      "price_display": "10960 DA",
+      "is_pack": true,
+      "badge": "4ème AP",
+      "folder": "images/4ps-flashcards",
+      "cover_image": "images/4ps-flashcards/animal-food-240da.webp",
+      "images": [
+        "images/4ps-flashcards/animal-food-240da.webp",
+        "images/4ps-flashcards/body-parts-common-illnesses-880da.webp",
+        "images/4ps-flashcards/familly-members-880da.webp",
+        "images/4ps-flashcards/farm-animals-960da.webp",
+        "images/4ps-flashcards/food-1760da.webp",
+        "images/4ps-flashcards/nationalities-languages-countries-1200da.webp",
+        "images/4ps-flashcards/school-1280da.webp",
+        "images/4ps-flashcards/seasons-and-fun-time-activities-and-games-1520da.webp",
+        "images/4ps-flashcards/zoo-animals-480da.webp"
+      ],
+      "description": "Pack éducatif complet 4ème Primaire regroupant 9 séries plastifiées officielles (vendu en pack complet).",
+      "pack_items": [
+        { "name": "Animal Food", "price": null, "image": "images/4ps-flashcards/animal-food-240da.webp" },
+        { "name": "Body Parts & Common Illnesses", "price": null, "image": "images/4ps-flashcards/body-parts-common-illnesses-880da.webp" },
+        { "name": "Family Members", "price": null, "image": "images/4ps-flashcards/familly-members-880da.webp" },
+        { "name": "Farm Animals", "price": null, "image": "images/4ps-flashcards/farm-animals-960da.webp" },
+        { "name": "Food & Drinks", "price": null, "image": "images/4ps-flashcards/food-1760da.webp" },
+        { "name": "Nationalities, Languages & Countries", "price": null, "image": "images/4ps-flashcards/nationalities-languages-countries-1200da.webp" },
+        { "name": "School", "price": null, "image": "images/4ps-flashcards/school-1280da.webp" },
+        { "name": "Seasons & Fun Time Activities", "price": null, "image": "images/4ps-flashcards/seasons-and-fun-time-activities-and-games-1520da.webp" },
+        { "name": "Zoo Animals", "price": null, "image": "images/4ps-flashcards/zoo-animals-480da.webp" }
+      ]
+    },
+    {
+      "id": "flashcards-5ps-pack",
+      "name": "Pack Flashcards 5PS (7 Thèmes - 5ème Primaire)",
+      "category": "flashcards",
+      "price": 7200,
+      "price_display": "7200 DA",
+      "is_pack": true,
+      "badge": "5ème AP",
+      "folder": "images/5ps-flashcards",
+      "cover_image": "images/5ps-flashcards/accupations-800da.webp",
+      "images": [
+        "images/5ps-flashcards/accupations-800da.webp",
+        "images/5ps-flashcards/ameneties-and-on-the-street-1280da.webp",
+        "images/5ps-flashcards/hobbies-320da.webp",
+        "images/5ps-flashcards/means-of-transport-and-destinations-1120da.webp",
+        "images/5ps-flashcards/ordinal-numbers-800da.webp",
+        "images/5ps-flashcards/signs-960da.webp",
+        "images/5ps-flashcards/weather-and-activities-960da.webp"
+      ],
+      "description": "Pack éducatif complet 5ème Primaire regroupant 7 séries thématiques plastifiées (vendu en pack complet).",
+      "pack_items": [
+        { "name": "Occupations & Jobs", "price": null, "image": "images/5ps-flashcards/accupations-800da.webp" },
+        { "name": "Amenities & Street", "price": null, "image": "images/5ps-flashcards/ameneties-and-on-the-street-1280da.webp" },
+        { "name": "Hobbies", "price": null, "image": "images/5ps-flashcards/hobbies-320da.webp" },
+        { "name": "Means of Transport & Destinations", "price": null, "image": "images/5ps-flashcards/means-of-transport-and-destinations-1120da.webp" },
+        { "name": "Ordinal Numbers", "price": null, "image": "images/5ps-flashcards/ordinal-numbers-800da.webp" },
+        { "name": "Signs & Road Safety", "price": null, "image": "images/5ps-flashcards/signs-960da.webp" },
+        { "name": "Weather & Activities", "price": null, "image": "images/5ps-flashcards/weather-and-activities-960da.webp" }
+      ]
+    },
+    {
+      "id": "yennayer-gherbal",
+      "name": "Gherbal Yennayer Décoré",
+      "category": "party-events",
+      "price": 750,
+      "price_display": "750 DA",
+      "folder": "images/yennayer-pack",
+      "images": ["images/yennayer-pack/gherbal-750da.webp"],
+      "description": "Gherbal décoré traditionnel et festif pour la célébration de Yennayer. Finition artisanale soignée."
+    },
+    {
+      "id": "yennayer-photo-gherbal",
+      "name": "Photo Gherbal Personnalisée",
+      "category": "party-events",
+      "price": 50,
+      "price_display": "50 DA (Normal) / 100 DA (Plastifié)",
+      "folder": "images/yennayer-pack",
+      "images": ["images/yennayer-pack/photo-gherbal-50da-100da.webp"],
+      "variants": [
+        { "name": "Impression Normale", "price": 50 },
+        { "name": "Impression Plastifiée", "price": 100 }
+      ],
+      "description": "Photo souvenir personnalisée pour gherbal de Yennayer."
+    },
+    {
+      "id": "yennayer-guirlande",
+      "name": "Guirlande Festive Yennayer",
+      "category": "party-events",
+      "price": 300,
+      "price_display": "300 DA",
+      "folder": "images/yennayer-pack",
+      "images": ["images/yennayer-pack/guirlande-yennayer-300da.webp"],
+      "description": "Banderole festive Yennayer aux motifs traditionnels berbères."
+    },
+    {
+      "id": "yennayer-sac",
+      "name": "Sac Décoré Yennayer",
+      "category": "party-events",
+      "price": 120,
+      "price_display": "120 DA",
+      "folder": "images/yennayer-pack",
+      "images": ["images/yennayer-pack/sac-yennayer-120da.webp"],
+      "description": "Sac festif décoré pour bonbons et gâteaux traditionnels de Yennayer."
+    },
+    {
+      "id": "yennayer-grande-boite",
+      "name": "Grande Boîte de Friandises Yennayer",
+      "category": "party-events",
+      "price": 120,
+      "price_display": "120 DA",
+      "folder": "images/yennayer-pack",
+      "images": ["images/yennayer-pack/grande-boite-friandises-120da.webp"],
+      "description": "Grande boîte cartonnée décorée aux motifs de Yennayer pour friandises."
+    },
+    {
+      "id": "yennayer-boite-pyramide",
+      "name": "Boîte Pyramide Yennayer (4 Modèles)",
+      "category": "party-events",
+      "price": 120,
+      "price_display": "120 DA / unité",
+      "folder": "images/yennayer-pack",
+      "images": [
+        "images/yennayer-pack/boite-pyramide-1-120da.webp",
+        "images/yennayer-pack/boite-pyramide-2-120da.webp",
+        "images/yennayer-pack/boite-pyramide-3-120da.webp",
+        "images/yennayer-pack/boite-pyramide-4-120da.webp"
+      ],
+      "description": "Boîtes pyramidales élégantes disponibles en 4 designs assortis pour friandises."
+    },
+    {
+      "id": "yennayer-boite-ronde",
+      "name": "Boîte Ronde Yennayer",
+      "category": "party-events",
+      "price": 60,
+      "price_display": "60 DA (Vide) / 100 DA (Remplie)",
+      "folder": "images/yennayer-pack",
+      "images": ["images/yennayer-pack/boite-ronde-60da-100da.webp"],
+      "variants": [
+        { "name": "Boîte Ronde Vide", "price": 60 },
+        { "name": "Boîte Ronde Remplie de Friandises", "price": 100 }
+      ],
+      "description": "Boîte ronde personnalisée Yennayer disponible vide ou garnie."
+    },
+    {
+      "id": "yennayer-bougie",
+      "name": "Bougie Décorative Yennayer",
+      "category": "party-events",
+      "price": 100,
+      "price_display": "100 DA",
+      "folder": "images/yennayer-pack",
+      "images": ["images/yennayer-pack/bougie-100da.webp"],
+      "description": "Bougie décorée pour la table festive de Yennayer."
+    },
+    {
+      "id": "yennayer-batonnet-bonbon",
+      "name": "Bâtonnet Bonbon Décoré Yennayer",
+      "category": "party-events",
+      "price": 50,
+      "price_display": "50 DA",
+      "folder": "images/yennayer-pack",
+      "images": ["images/yennayer-pack/batonnet-bonbon-50da.webp"],
+      "description": "Bâtonnets sucrés présentés sous emballage thématique Yennayer."
+    },
+    {
+      "id": "yennayer-sucette-decoree",
+      "name": "Sucette Décorée Yennayer",
+      "category": "party-events",
+      "price": 40,
+      "price_display": "40 DA",
+      "folder": "images/yennayer-pack",
+      "images": ["images/yennayer-pack/sucette-decoree-40da.webp"],
+      "description": "Sucette avec étiquette personnalisée fête de Yennayer."
+    },
+    {
+      "id": "sheet-dress-the-princess",
+      "name": "Dress the Princess (Fiche Interactive)",
+      "category": "activity-sheets",
+      "price": 500,
+      "price_display": "500 DA",
+      "is_sheet": true,
+      "sheet_category": "Games & Interactive",
+      "age_group": "3-6",
+      "folder": "images/custom-activity-book",
+      "images": ["images/custom-activity-book/dress-the-princess-500da.webp"],
+      "description": "Fiche interactive plastifiée avec vêtements et accessoires détachables pour habiller la princesse."
+    },
+    {
+      "id": "sheet-feed-the-princess",
+      "name": "Feed the Princess (Fiche Interactive)",
+      "category": "activity-sheets",
+      "price": 500,
+      "price_display": "500 DA",
+      "is_sheet": true,
+      "sheet_category": "Games & Interactive",
+      "age_group": "3-6",
+      "folder": "images/custom-activity-book",
+      "images": ["images/custom-activity-book/feed-the-princess-500da.webp"],
+      "description": "Fiche de jeu éducative interactive plastifiée pour nourrir la princesse avec différents aliments."
+    },
+    {
+      "id": "sheet-forest-animals",
+      "name": "Forest Animals Tracing & Matching Sheet",
+      "category": "activity-sheets",
+      "price": 200,
+      "price_display": "200 DA",
+      "is_sheet": true,
+      "sheet_category": "Tracing & Motor Skills",
+      "age_group": "3-6",
+      "folder": "images/custom-activity-book",
+      "images": ["images/custom-activity-book/forest-animals-200da.webp"],
+      "description": "Fiche plastifiée d'identification et de traçage des animaux de la forêt."
+    },
+    {
+      "id": "sheet-bug-tracing",
+      "name": "Bug Tracing & Pre-Writing Lines Sheet",
+      "category": "activity-sheets",
+      "price": 100,
+      "price_display": "100 DA",
+      "is_sheet": true,
+      "sheet_category": "Tracing & Motor Skills",
+      "age_group": "3-5",
+      "folder": "images/custom-activity-book",
+      "images": ["images/custom-activity-book/bug-tracing-activity-100da.webp"],
+      "description": "Fiche plastifiée de pré-écriture avec lignes ondulées, zigzag et boucles."
+    },
+    {
+      "id": "sheet-clean-dirty-objects",
+      "name": "Clean vs Dirty Objects Activity Sheet",
+      "category": "activity-sheets",
+      "price": 200,
+      "price_display": "200 DA",
+      "is_sheet": true,
+      "sheet_category": "Logic & Daily Life",
+      "age_group": "4-7",
+      "folder": "images/custom-activity-book",
+      "images": ["images/custom-activity-book/clean-dirty-objects-200da.webp"],
+      "description": "Fiche d'association et d'apprentissage des bonnes habitudes d'hygiène."
+    },
+    {
+      "id": "sheet-color-by-numbers",
+      "name": "Color by Numbers Practice Sheet",
+      "category": "activity-sheets",
+      "price": 100,
+      "price_display": "100 DA",
+      "is_sheet": true,
+      "sheet_category": "Art & Colors",
+      "age_group": "4-7",
+      "folder": "images/custom-activity-book",
+      "images": ["images/custom-activity-book/color-by-numbers-100da.webp"],
+      "description": "Coloriage magique guidé par numéros et couleurs réutilisable avec feutre effaçable."
+    },
+    {
+      "id": "sheet-count-with-icecream",
+      "name": "Count with Ice Cream Math Sheet",
+      "category": "activity-sheets",
+      "price": 200,
+      "price_display": "200 DA",
+      "is_sheet": true,
+      "sheet_category": "Math Practice",
+      "age_group": "3-6",
+      "folder": "images/custom-activity-book",
+      "images": ["images/custom-activity-book/count-with-icecream-200da.webp"],
+      "description": "Fiche ludique d'initiation au calcul et dénombrement avec des cornets de glaces."
+    },
+    {
+      "id": "sheet-shape-games",
+      "name": "Shape Games & Matching Sheet",
+      "category": "activity-sheets",
+      "price": 100,
+      "price_display": "100 DA",
+      "is_sheet": true,
+      "sheet_category": "Logic & Daily Life",
+      "age_group": "3-5",
+      "folder": "images/custom-activity-book",
+      "images": ["images/custom-activity-book/shape-games-100da.webp"],
+      "description": "Reconnaissance des formes géométriques de base (rond, triangle, carré)."
+    },
+    {
+      "id": "sheet-unplugged-coding",
+      "name": "Unplugged Coding Logic Sheet",
+      "category": "activity-sheets",
+      "price": 200,
+      "price_display": "200 DA",
+      "is_sheet": true,
+      "sheet_category": "Logic & Daily Life",
+      "age_group": "5-8",
+      "folder": "images/custom-activity-book",
+      "images": ["images/custom-activity-book/unplugged-coding-200da.webp"],
+      "description": "Initiation à la logique algorithmique déconnectée avec flèches de déplacement."
+    },
+    {
+      "id": "sheet-write-your-name",
+      "name": "Write Your Name Personalized Practice Sheet",
+      "category": "activity-sheets",
+      "price": 200,
+      "price_display": "200 DA",
+      "is_sheet": true,
+      "sheet_category": "Tracing & Motor Skills",
+      "age_group": "4-7",
+      "folder": "images/custom-activity-book",
+      "images": ["images/custom-activity-book/write-your-name-page-200da.webp"],
+      "description": "Fiche personnalisée pour apprendre à tracer et écrire son prénom."
+    },
+    {
+      "id": "sheet-pizza-game",
+      "name": "Pizza Game Fractions & Toppings Sheet",
+      "category": "activity-sheets",
+      "price": 200,
+      "price_display": "200 DA",
+      "is_sheet": true,
+      "sheet_category": "Math Practice",
+      "age_group": "5-8",
+      "folder": "images",
+      "images": ["images/pizza-game-200da.webp"],
+      "description": "Fiche d'apprentissage des fractions et du partage équitable avec des parts de pizza."
+    },
+    {
+      "id": "tableau-de-conversion",
+      "name": "Tableau de Conversion Plastifié (Unités de Mesure)",
+      "category": "school-packs",
+      "price": 100,
+      "price_display": "100 DA",
+      "folder": "images",
+      "images": ["images/tableau-de-conversion-100da.webp"],
+      "description": "Fiche plastifiée effaçable pour conversion métrique et unités de mesure scolaire."
     },
     {
       "id": "planner-daily-600",
@@ -519,7 +602,6 @@
         "images/my-everything-planner/daily-planner-cover-600da.webp",
         "images/my-everything-planner/daily-planner-50p-600da.webp"
       ],
-      "is_bundle": false,
       "description": "Planificateur journalier 50 pages avec gestion des priorités du jour, to-do list et suivi des habitudes."
     },
     {
@@ -533,8 +615,7 @@
         "images/my-everything-planner/weekly-planner-50p-cover-1000da.webp",
         "images/my-everything-planner/weekly-planner-50p-1000da.webp"
       ],
-      "is_bundle": false,
-      "description": "Planificateur semainier 50 pages pour organiser toute sa semaine d'un seul coup d'œil."
+      "description": "Planificateur semainier 50 pages pour organiser toute sa semaine."
     },
     {
       "id": "planner-monthly-200",
@@ -547,8 +628,7 @@
         "images/my-everything-planner/monthly-planner-cover-120da.webp",
         "images/my-everything-planner/monthly-planner-200da.webp"
       ],
-      "is_bundle": false,
-      "description": "Planificateur mensuel et calendrier pour suivre ses objectifs, rendez-vous et échéances du mois."
+      "description": "Planificateur mensuel et calendrier pour suivre ses objectifs et rendez-vous du mois."
     },
     {
       "id": "planner-summary-sheets",
@@ -557,11 +637,8 @@
       "price": 200,
       "price_display": "200 DA",
       "folder": "images/my-everything-planner",
-      "images": [
-        "images/my-everything-planner/summary-sheets-10-200da.webp"
-      ],
-      "is_bundle": false,
-      "description": "Pack de 10 fiches de synthèse pour bilan hebdomadaire ou mensuel de projets."
+      "images": ["images/my-everything-planner/summary-sheets-10-200da.webp"],
+      "description": "Pack de 10 fiches de synthèse pour bilan hebdomadaire ou mensuel."
     },
     {
       "id": "planner-thoughts-notes",
@@ -570,10 +647,7 @@
       "price": 200,
       "price_display": "200 DA",
       "folder": "images/my-everything-planner",
-      "images": [
-        "images/my-everything-planner/thoughts-and-notes-50p-200da.webp"
-      ],
-      "is_bundle": false,
+      "images": ["images/my-everything-planner/thoughts-and-notes-50p-200da.webp"],
       "description": "Carnet d'idées et de notes personnelles 50 pages au format pratique."
     },
     {
@@ -583,11 +657,8 @@
       "price": 400,
       "price_display": "400 DA",
       "folder": "images",
-      "images": [
-        "images/felix-bokkari-daily-planner-50p-400da.webp"
-      ],
-      "is_bundle": false,
-      "description": "Daily planner Felix Bokkari 50 pages, idéal pour la productivité au quotidien."
+      "images": ["images/felix-bokkari-daily-planner-50p-400da.webp"],
+      "description": "Daily planner Felix Bokkari 50 pages pour la productivité au quotidien."
     },
     {
       "id": "planner-weekly-meal",
@@ -601,104 +672,12 @@
         "images/weekly-meal-planner/weekly-meal-planner-french-300da.webp",
         "images/weekly-meal-planner/weekly-meal-planner-english-300da.webp"
       ],
-      "is_bundle": false,
       "variants": [
         { "name": "Version Arabe", "price": 300 },
         { "name": "Version Française", "price": 300 },
         { "name": "Version Anglaise", "price": 300 }
       ],
       "description": "Planning hebdomadaire de repas plastifié effaçable disponible au choix en Arabe, Français ou Anglais."
-    },
-    {
-      "id": "flashcards-3ps-pack",
-      "name": "Pack Complet Flashcards 3PS (7 Thèmes - 3ème Primaire)",
-      "category": "flashcards",
-      "price": 7120,
-      "price_display": "7120 DA",
-      "folder": "images/3ps-flashcards",
-      "images": [
-        "images/3ps-flashcards/colors-and-prepositions-880da.webp",
-        "images/3ps-flashcards/greetings-school-objects-800da.webp",
-        "images/3ps-flashcards/parts-of-the-house-and-prepositions-800da.webp",
-        "images/3ps-flashcards/party-objects-and-parts-of-the-face-1040da.webp",
-        "images/3ps-flashcards/pets-1120da.webp",
-        "images/3ps-flashcards/school-subjects-640da.webp",
-        "images/3ps-flashcards/toys-640da.webp"
-      ],
-      "is_bundle": true,
-      "sells_as_bundle_only": true,
-      "bundle_items": [
-        "Colors and Prepositions",
-        "Greetings and School Objects",
-        "Parts of the House and Prepositions",
-        "Party Objects and Parts of the Face",
-        "Pets and Animals",
-        "School Subjects",
-        "Toys and Games"
-      ],
-      "description": "Pack éducatif complet 3ème Primaire regroupant les 7 séries de flashcards plastifiées avec vocabulaire et illustrations en anglais."
-    },
-    {
-      "id": "flashcards-4ps-pack",
-      "name": "Pack Complet Flashcards 4PS (9 Thèmes - 4ème Primaire)",
-      "category": "flashcards",
-      "price": 10960,
-      "price_display": "10960 DA",
-      "folder": "images/4ps-flashcards",
-      "images": [
-        "images/4ps-flashcards/animal-food-240da.webp",
-        "images/4ps-flashcards/body-parts-common-illnesses-880da.webp",
-        "images/4ps-flashcards/familly-members-880da.webp",
-        "images/4ps-flashcards/farm-animals-960da.webp",
-        "images/4ps-flashcards/food-1760da.webp",
-        "images/4ps-flashcards/nationalities-languages-countries-1200da.webp",
-        "images/4ps-flashcards/school-1280da.webp",
-        "images/4ps-flashcards/seasons-and-fun-time-activities-and-games-1520da.webp",
-        "images/4ps-flashcards/zoo-animals-480da.webp"
-      ],
-      "is_bundle": true,
-      "sells_as_bundle_only": true,
-      "bundle_items": [
-        "Animal Food",
-        "Body Parts and Common Illnesses",
-        "Family Members",
-        "Farm Animals",
-        "Food and Drinks",
-        "Nationalities, Languages and Countries",
-        "School Life and Subjects",
-        "Seasons and Fun Time Activities",
-        "Zoo Animals"
-      ],
-      "description": "Pack éducatif complet 4ème Primaire regroupant les 9 séries de flashcards plastifiées indispensables pour le programme scolaire."
-    },
-    {
-      "id": "flashcards-5ps-pack",
-      "name": "Pack Complet Flashcards 5PS (7 Thèmes - 5ème Primaire)",
-      "category": "flashcards",
-      "price": 7200,
-      "price_display": "7200 DA",
-      "folder": "images/5ps-flashcards",
-      "images": [
-        "images/5ps-flashcards/accupations-800da.webp",
-        "images/5ps-flashcards/ameneties-and-on-the-street-1280da.webp",
-        "images/5ps-flashcards/hobbies-320da.webp",
-        "images/5ps-flashcards/means-of-transport-and-destinations-1120da.webp",
-        "images/5ps-flashcards/ordinal-numbers-800da.webp",
-        "images/5ps-flashcards/signs-960da.webp",
-        "images/5ps-flashcards/weather-and-activities-960da.webp"
-      ],
-      "is_bundle": true,
-      "sells_as_bundle_only": true,
-      "bundle_items": [
-        "Occupations and Jobs",
-        "Amenities and On the Street",
-        "Hobbies and Free Time",
-        "Means of Transport and Destinations",
-        "Ordinal Numbers",
-        "Signs and Road Safety",
-        "Weather and Activities"
-      ],
-      "description": "Pack éducatif complet 5ème Primaire regroupant les 7 séries de flashcards thématiques plastifiées avec illustrations et vocabulaire bilingue."
     }
   ]
 }
