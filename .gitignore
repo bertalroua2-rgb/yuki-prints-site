@@ -1,0 +1,5 @@
+﻿# Raw originals and backups (not published)
+images_raw/
+images_old_mockup_crops/
+*.csv
+*.ps1
